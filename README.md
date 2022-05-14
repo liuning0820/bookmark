@@ -9,4 +9,4 @@ Maintains all frequently used bookmarks in code and host on github page, set as 
 - Xmarks Bookmarks sync between browsers
 - ChromeExtension "Bookmarks Anywhere" and access using html.
 - An html format bookmark file be set as home page across devices and sync between browsers.
-  - When saved in OneDrive or GitHub, can sync the bookmarks across device.
+  - When saved in OneDrive or GitHub, can sync the bookmarks across devices and network.
