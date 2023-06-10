@@ -1,0 +1,75 @@
+# parameters within this file must be aligned correctly  - be careful 
+#
+# [update as needed] specify name for your site - this is included at top left of page next to logo 
+site_name: Work For Free Handbook
+# this identifies the theme used to control look and feel of this site - generally should unchanged
+# palette colours defined to adhere to DXC branding colours
+# logo controls the image included at top left
+# favicon controls the icon used on browser tab
+# features enabled the top menu - actual include items included in based on sub-folders 
+# included in docs folder that include md files
+
+theme: 
+  # name: readthedocs
+  name: material
+  palette:
+    primary: 'white'
+    accent: 'yellow'
+  logo: 'images/favicon.ico'
+  favicon: 'images/favicon.ico'
+  feature:
+    tabs: true
+
+
+copyright: "Copyright &copy; 2020 - 2021 Toby Liu. All Rights Reserved."
+
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+
+# [update as needed] specify the URL to the GitHub repo for this site - included as link top right
+repo_url: https://github.com/liuning0820/bookmark-as-code
+# [update as needed] specify the text for repo link - included as link top right
+repo_name: 'GitHub'
+# specify the relative path to markdown files in GitHub repo - typically does not need to be updated
+# [update as needed] provides an edit link for each markdown page in site to make contribution to content easier
+edit_uri: tree/master/docs/
+# specify any links you want to include at right of footer
+# [update as needed] type is a fontawesome reference
+# extra:
+#   social:
+#     - type: 'github'
+#       link: 'https://github.com/liuning0820/'
+#     - type: 'linkedin'
+#       link: 'http://www.linkedin.com/in/toby-liu-86750923/'
+#     - type: 'globe'
+#       link: 'https://liuning0820.github.io/'
+
+extra:
+  generator: false
+  social:
+    - icon: material/home
+      link: ./
+      name: Home
+    - icon: material/linkedin
+      link: http://www.linkedin.com/in/toby-liu-86750923/
+      name: Linkin
+
+
+
+# lists any additional javascript references required for site
+# mermaid added to support diagrams as code using mermaid in content
+# lists plugins used
+# search enables LUNR search on site
+# git-revision-date allows include last edit date in pages https://github.com/zhaoterryy/mkdocs-git-revision-date-plugin
+# macros enables variables support https://github.com/fralau/mkdocs_macros_plugin
+plugins:
+  - search
+  - git-revision-date
+  - mkdocs-video
+
