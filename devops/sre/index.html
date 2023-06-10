@@ -1,0 +1,833 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.4">
+    
+    
+      
+        <title>SRE Road - Work For Free Handbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2d9f7617.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ffffff">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="yellow">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sre-road" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Work For Free Handbook" class="md-header__button md-logo" aria-label="Work For Free Handbook" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Work For Free Handbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SRE Road
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/liuning0820/public-doc-as-code/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Work For Free Handbook" class="md-nav__button md-logo" aria-label="Work For Free Handbook" data-md-component="logo">
+      
+  <img src="../../images/favicon.ico" alt="logo">
+
+    </a>
+    Work For Free Handbook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/liuning0820/public-doc-as-code/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bookmark/" class="md-nav__link">
+        All-in-One Bookmarks
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Devops
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Devops" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Devops
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sre-outage-2023/" class="md-nav__link">
+        Outage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          SRE Road
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        SRE Road
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#whats-sre" class="md-nav__link">
+    What's SRE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sre-and-devops-shared-practices" class="md-nav__link">
+    SRE and DevOps Shared practices
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sre-key-principle" class="md-nav__link">
+    SRE Key principle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sres-mission" class="md-nav__link">
+    SRE's Mission
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sla-slo-sli" class="md-nav__link">
+    SLA &amp; SLO &amp; SLI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-four-golden-signals" class="md-nav__link">
+    The Four Golden Signals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sre-budgets" class="md-nav__link">
+    SRE Budgets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sre-role-expectation" class="md-nav__link">
+    SRE Role Expectation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observability" class="md-nav__link">
+    Observability
+  </a>
+  
+    <nav class="md-nav" aria-label="Observability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metrics" class="md-nav__link">
+    Metrics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logs" class="md-nav__link">
+    Logs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trace" class="md-nav__link">
+    Trace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-should-be-monitored" class="md-nav__link">
+    What should be monitored
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alert-incident-response" class="md-nav__link">
+    Alert &amp; Incident Response
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#srecon22" class="md-nav__link">
+    SREcon22
+  </a>
+  
+    <nav class="md-nav" aria-label="SREcon22">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srecon22-apac-move-fast-and-learn-things-principles-of-cognition-teaming-and-coordination" class="md-nav__link">
+    SREcon22 APAC - Move Fast and Learn Things: Principles of Cognition, Teaming, and Coordination
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource" class="md-nav__link">
+    Resource
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#whats-sre" class="md-nav__link">
+    What's SRE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sre-and-devops-shared-practices" class="md-nav__link">
+    SRE and DevOps Shared practices
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sre-key-principle" class="md-nav__link">
+    SRE Key principle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sres-mission" class="md-nav__link">
+    SRE's Mission
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sla-slo-sli" class="md-nav__link">
+    SLA &amp; SLO &amp; SLI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-four-golden-signals" class="md-nav__link">
+    The Four Golden Signals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sre-budgets" class="md-nav__link">
+    SRE Budgets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sre-role-expectation" class="md-nav__link">
+    SRE Role Expectation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observability" class="md-nav__link">
+    Observability
+  </a>
+  
+    <nav class="md-nav" aria-label="Observability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metrics" class="md-nav__link">
+    Metrics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logs" class="md-nav__link">
+    Logs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trace" class="md-nav__link">
+    Trace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-should-be-monitored" class="md-nav__link">
+    What should be monitored
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alert-incident-response" class="md-nav__link">
+    Alert &amp; Incident Response
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#srecon22" class="md-nav__link">
+    SREcon22
+  </a>
+  
+    <nav class="md-nav" aria-label="SREcon22">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srecon22-apac-move-fast-and-learn-things-principles-of-cognition-teaming-and-coordination" class="md-nav__link">
+    SREcon22 APAC - Move Fast and Learn Things: Principles of Cognition, Teaming, and Coordination
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource" class="md-nav__link">
+    Resource
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/liuning0820/public-doc-as-code/tree/master/docs/devops/sre.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+
+<h1 id="sre-road">SRE Road</h1>
+<ul>
+<li><a href="#sre-road">SRE Road</a></li>
+<li><a href="#whats-sre">What's SRE</a></li>
+<li><a href="#sre-and-devops-shared-practices">SRE and DevOps Shared practices</a></li>
+<li><a href="#sre-key-principle">SRE Key principle</a></li>
+<li><a href="#sres-mission">SRE's Mission</a></li>
+<li><a href="#sla--slo--sli">SLA \&amp; SLO \&amp; SLI</a></li>
+<li><a href="#the-four-golden-signals">The Four Golden Signals</a></li>
+<li><a href="#sre-budgets">SRE Budgets</a></li>
+<li><a href="#sre-role-expectation">SRE Role Expectation</a></li>
+<li><a href="#observability">Observability</a><ul>
+<li><a href="#metrics">Metrics</a></li>
+<li><a href="#logs">Logs</a></li>
+<li><a href="#trace">Trace</a></li>
+</ul>
+</li>
+<li><a href="#what-should-be-monitored">What should be monitored</a></li>
+<li><a href="#alert--incident-response">Alert \&amp; Incident Response</a></li>
+<li><a href="#srecon22">SREcon22</a><ul>
+<li><a href="#srecon22-apac---move-fast-and-learn-things-principles-of-cognition-teaming-and-coordination">SREcon22 APAC - Move Fast and Learn Things: Principles of Cognition, Teaming, and Coordination</a></li>
+</ul>
+</li>
+<li><a href="#resource">Resource</a></li>
+</ul>
+<h2 id="whats-sre">What's SRE</h2>
+<p><code>Site Reliability Engineering</code> is an engineering discipline devoted to helping an organization achieve the appropriate level of reliability in their systems, services, and products.</p>
+<h2 id="sre-and-devops-shared-practices">SRE and DevOps Shared practices</h2>
+<ul>
+<li>Automation</li>
+<li>Monitoring, Observability, Measure</li>
+</ul>
+<h2 id="sre-key-principle">SRE Key principle</h2>
+<ul>
+<li>Build feedback loop that help continuously get better.</li>
+<li>health check indicators (SLI, SLO, error budget)</li>
+<li>Blameless postmortem</li>
+<li>Eliminate toil when it is appropriate</li>
+</ul>
+<h2 id="sres-mission">SRE's Mission</h2>
+<ul>
+<li>
+<p>Reliability - Meet the availability targets the users need</p>
+</li>
+<li>
+<p>Velocity - Maximize the long-term feature velocity.</p>
+</li>
+<li>
+<p>Maintainability - 易于维护</p>
+</li>
+<li>
+<p>Efficiency - 高效利用人力和资源</p>
+</li>
+</ul>
+<h2 id="sla-slo-sli">SLA &amp; SLO &amp; SLI</h2>
+<p>SLA - a promise, economic incentive, or else, we get paged</p>
+<p>SLO - a goal.</p>
+<p>SLI- Service Level Indicator</p>
+<p>reference:</p>
+<ol>
+<li><a href="https://devops.com/sres-stop-asking-your-product-managers-for-slos/">https://devops.com/sres-stop-asking-your-product-managers-for-slos/</a></li>
+</ol>
+<h2 id="the-four-golden-signals">The Four Golden Signals</h2>
+<p>Focus on metrics that tell you insights into the “The Four Golden Signals” of monitoring:</p>
+<ul>
+<li><strong>Latency</strong>: The time it takes to service a request.</li>
+<li><strong>Traffic</strong>: How much demand is being placed on your system.</li>
+<li><strong>Errors</strong>: The rate of failures in your system.</li>
+<li><strong>Saturation</strong>: How “full” is your system — and critically, how much capacity remains.</li>
+</ul>
+<h2 id="sre-budgets">SRE Budgets</h2>
+<ul>
+<li>Performance budgets</li>
+<li>Error Budget</li>
+<li>A service that’s 99.99% available is 0.01% unavailable. That permitted 0.01% unavailability is the service’s error budget.</li>
+<li>Training Budget</li>
+<li>Toil budget</li>
+</ul>
+<h2 id="sre-role-expectation">SRE Role Expectation</h2>
+<ol>
+<li>Set up the platform level monitoring to keep critical applications up and running despite bandwidth outage, and configuration problems.</li>
+<li>Engage in service capacity planning, software performance analysis and system tunning</li>
+<li>Collaborate with Infra team to lead platform level operation optimization （AWS，Akamai，F5，Dockers，DB）</li>
+<li>Conduct on call duties for critical platform issues</li>
+</ol>
+<h2 id="observability">Observability</h2>
+<h3 id="metrics">Metrics</h3>
+<p>time series databases like Prometheus, InfluxDb,Graphite.</p>
+<h3 id="logs">Logs</h3>
+<p>Loki, Splunk</p>
+<h3 id="trace">Trace</h3>
+<ul>
+<li>Grafana Tempo with open trace protocal OpenTelemetry</li>
+<li>Zipkin — 微服务链路跟踪 https://zipkin.io/pages/quickstart.html</li>
+<li>Jaeger</li>
+<li>OpenTelemetry https://opentelemetry.io/</li>
+</ul>
+<h2 id="what-should-be-monitored">What should be monitored</h2>
+<ul>
+<li>Service downtime (health check)</li>
+<li>Slow response time</li>
+<li>Errors and crashes events/logs</li>
+<li>Resource usage. Don't waste money on unnecessary resources ( cloud resource watch)</li>
+</ul>
+<p>https://hackernoon.com/node-js-monitoring-done-right-70418ecbbff9</p>
+<h2 id="alert-incident-response">Alert &amp; Incident Response</h2>
+<p>https://engineering.razorpay.com/what-goes-behind-managing-production-alerts-204f186ce865</p>
+<h2 id="srecon22">SREcon22</h2>
+<h3 id="srecon22-apac-move-fast-and-learn-things-principles-of-cognition-teaming-and-coordination">SREcon22 APAC - Move Fast and Learn Things: Principles of Cognition, Teaming, and Coordination</h3>
+<p>Cognitive Work</p>
+<h2 id="resource">Resource</h2>
+<ul>
+<li>https://github.com/linkedin/school-of-sre</li>
+<li>Site Reliability Engineering: How Google Runs Production Systems (known as "The SRE Book")</li>
+<li>The Site Reliability Workbook: Practical Ways to Implement SRE (known as "The SRE Workbook")</li>
+<li>Seeking SRE: Conversations About Running Production Systems at Scale</li>
+<li><a href="https://www.usenix.org/conference/srecon14/technical-sessions/presentation/keys-sre">SREcon</a> </li>
+</ul>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2023-06-10
+    
+  </small>
+</div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../sre-outage-2023/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Outage" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Outage
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2020 - 2023 Toby Liu. All Rights Reserved.
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="./" target="_blank" rel="noopener" title="Home" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5z"/></svg>
+    </a>
+  
+    
+    
+    <a href="http://www.linkedin.com/in/toby-liu-86750923/" target="_blank" rel="noopener" title="Linkin" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5413a266.min.js"></script>
+      
+    
+  </body>
+</html>
