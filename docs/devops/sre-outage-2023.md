@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Outage
 
 - [DNS Outage on 2023-01-25](#dns-outage-on-2023-01-25)

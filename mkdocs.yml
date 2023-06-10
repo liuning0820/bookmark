@@ -12,6 +12,7 @@ site_name: Work For Free Handbook
 theme: 
   # name: readthedocs
   name: material
+  custom_dir: overrides
   palette:
     primary: 'white'
     accent: 'yellow'

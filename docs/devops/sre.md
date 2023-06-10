@@ -1,23 +1,22 @@
 # SRE Road
 
-- [SRE Road](#sre-road)
-  - [What's SRE](#whats-sre)
-  - [SRE and DevOps Shared practices](#sre-and-devops-shared-practices)
-  - [SRE Key principle](#sre-key-principle)
-  - [SRE's Mission](#sres-mission)
-  - [SLA \& SLO \& SLI](#sla--slo--sli)
-  - [The Four Golden Signals](#the-four-golden-signals)
-  - [SRE Budgets](#sre-budgets)
-  - [SRE Role Expectation](#sre-role-expectation)
-  - [Observability](#observability)
-    - [Metrics](#metrics)
-    - [Logs](#logs)
-    - [Trace](#trace)
-  - [What should be monitored](#what-should-be-monitored)
-  - [Alert \& Incident Response](#alert--incident-response)
-  - [SREcon22](#srecon22)
-    - [SREcon22 APAC - Move Fast and Learn Things: Principles of Cognition, Teaming, and Coordination](#srecon22-apac---move-fast-and-learn-things-principles-of-cognition-teaming-and-coordination)
-  - [Resource](#resource)
+- [What's SRE](#whats-sre)
+- [SRE and DevOps Shared practices](#sre-and-devops-shared-practices)
+- [SRE Key principle](#sre-key-principle)
+- [SRE's Mission](#sres-mission)
+- [SLA \& SLO \& SLI](#sla--slo--sli)
+- [The Four Golden Signals](#the-four-golden-signals)
+- [SRE Budgets](#sre-budgets)
+- [SRE Role Expectation](#sre-role-expectation)
+- [Observability](#observability)
+  - [Metrics](#metrics)
+  - [Logs](#logs)
+  - [Trace](#trace)
+- [What should be monitored](#what-should-be-monitored)
+- [Alert \& Incident Response](#alert--incident-response)
+- [SREcon22](#srecon22)
+  - [SREcon22 APAC - Move Fast and Learn Things: Principles of Cognition, Teaming, and Coordination](#srecon22-apac---move-fast-and-learn-things-principles-of-cognition-teaming-and-coordination)
+- [Resource](#resource)
 
 ## What's SRE
 
@@ -123,7 +122,7 @@ Cognitive Work
 
 ## Resource
 
-- https://github.com/linkedin/school-of-sre
+- <https://github.com/linkedin/school-of-sre>
 - Site Reliability Engineering: How Google Runs Production Systems (known as "The SRE Book")
 - The Site Reliability Workbook: Practical Ways to Implement SRE (known as "The SRE Workbook")
 - Seeking SRE: Conversations About Running Production Systems at Scale
