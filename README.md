@@ -18,3 +18,8 @@ mkdocs serve
 
 mkdocs gh-deploy
 ```
+
+
+## Reference
+
+1. <https://shenhao-stu.github.io/WiKi-for-Sufe-Courses>
