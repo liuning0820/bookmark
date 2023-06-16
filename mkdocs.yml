@@ -14,8 +14,8 @@ theme:
   name: material
   custom_dir: overrides
   palette:
-    primary: 'white'
-    accent: 'yellow'
+    primary: white
+    accent: indigo
   logo: 'images/favicon.ico'
   favicon: 'images/favicon.ico'
   feature:
@@ -62,7 +62,9 @@ extra:
     - icon: material/linkedin
       link: http://www.linkedin.com/in/toby-liu-86750923/
       name: Linkin
-
+  analytics:
+    provider: google
+    property: G-44TYLJ4BRN
 
 
 
