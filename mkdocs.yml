@@ -18,8 +18,9 @@ theme:
     accent: indigo
   logo: 'images/favicon.ico'
   favicon: 'images/favicon.ico'
-  feature:
-    tabs: true
+  features:
+    - navigation.tabs
+    
 
 
 copyright: "Copyright &copy; 2020 - 2023 Toby Liu. All Rights Reserved."
