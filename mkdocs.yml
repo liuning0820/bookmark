@@ -20,7 +20,8 @@ theme:
   favicon: 'images/favicon.ico'
   features:
     - navigation.tabs
-    
+    - navigation.tabs.sticky
+    # - navigation.top
 
 
 copyright: "Copyright &copy; 2020 - 2023 Toby Liu. All Rights Reserved."
