@@ -13,7 +13,7 @@
     
     
       
-        <title>SRE Road - Work For Free Handbook</title>
+        <title>Hands-On Lab: Enable Kubernetes Metrics Server on Docker Desktop - Work For Free Handbook</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sre-road" class="md-skip">
+        <a href="#hands-on-lab-enable-kubernetes-metrics-server-on-docker-desktop" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SRE Road
+              Hands-On Lab: Enable Kubernetes Metrics Server on Docker Desktop
             
           </span>
         </div>
@@ -197,13 +197,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../DIY/airplay-with-pi/" class="md-tabs__link">
+      <a href="../airplay-with-pi/" class="md-tabs__link md-tabs__link--active">
         DIY
       </a>
     </li>
@@ -213,15 +215,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../sre-outage-2023/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../SRE/sre-outage-2023/" class="md-tabs__link">
         SRE
       </a>
     </li>
@@ -329,12 +329,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -357,72 +359,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../DIY/airplay-with-pi/" class="md-nav__link">
+      <a href="../airplay-with-pi/" class="md-nav__link">
         树莓派手机投屏
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../DIY/enable-kubernetes-metrics-server-on-docker-desktop/" class="md-nav__link">
-        Hands-On Lab: Enable Kubernetes Metrics Server on Docker Desktop
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4">
-          SRE
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="SRE" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          SRE
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sre-outage-2023/" class="md-nav__link">
-        Outage
       </a>
     </li>
   
@@ -445,12 +383,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          SRE Road
+          Hands-On Lab: Enable Kubernetes Metrics Server on Docker Desktop
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        SRE Road
+        Hands-On Lab: Enable Kubernetes Metrics Server on Docker Desktop
       </a>
       
         
@@ -469,145 +407,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#whats-sre" class="md-nav__link">
-    What's SRE
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sre-and-devops-shared-practices" class="md-nav__link">
-    SRE and DevOps Shared practices
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sre-key-principle" class="md-nav__link">
-    SRE Key principle
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sres-mission" class="md-nav__link">
-    SRE's Mission
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sla-slo-sli" class="md-nav__link">
-    SLA &amp; SLO &amp; SLI
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-four-golden-signals" class="md-nav__link">
-    The Four Golden Signals
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sre-budgets" class="md-nav__link">
-    SRE Budgets
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sre-role-expectation" class="md-nav__link">
-    SRE Role Expectation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#observability" class="md-nav__link">
-    Observability
-  </a>
-  
-    <nav class="md-nav" aria-label="Observability">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#metrics" class="md-nav__link">
-    Metrics
-  </a>
-  
-    <nav class="md-nav" aria-label="Metrics">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cpu-throttling" class="md-nav__link">
-    CPU Throttling
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#logs" class="md-nav__link">
-    Logs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#trace" class="md-nav__link">
-    Trace
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-should-be-monitored" class="md-nav__link">
-    What should be monitored
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#alert-incident-response" class="md-nav__link">
-    Alert &amp; Incident Response
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#srecon22" class="md-nav__link">
-    SREcon22
-  </a>
-  
-    <nav class="md-nav" aria-label="SREcon22">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#srecon22-apac-move-fast-and-learn-things-principles-of-cognition-teaming-and-coordination" class="md-nav__link">
-    SREcon22 APAC - Move Fast and Learn Things: Principles of Cognition, Teaming, and Coordination
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resource" class="md-nav__link">
-    Resource
+  <a href="#steps-to-enable-it" class="md-nav__link">
+    Steps to Enable it
   </a>
   
 </li>
@@ -616,6 +424,68 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          SRE
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="SRE" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          SRE
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SRE/sre-outage-2023/" class="md-nav__link">
+        Outage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SRE/sre/" class="md-nav__link">
+        SRE Road
+      </a>
     </li>
   
 
@@ -702,145 +572,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#whats-sre" class="md-nav__link">
-    What's SRE
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sre-and-devops-shared-practices" class="md-nav__link">
-    SRE and DevOps Shared practices
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sre-key-principle" class="md-nav__link">
-    SRE Key principle
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sres-mission" class="md-nav__link">
-    SRE's Mission
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sla-slo-sli" class="md-nav__link">
-    SLA &amp; SLO &amp; SLI
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-four-golden-signals" class="md-nav__link">
-    The Four Golden Signals
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sre-budgets" class="md-nav__link">
-    SRE Budgets
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sre-role-expectation" class="md-nav__link">
-    SRE Role Expectation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#observability" class="md-nav__link">
-    Observability
-  </a>
-  
-    <nav class="md-nav" aria-label="Observability">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#metrics" class="md-nav__link">
-    Metrics
-  </a>
-  
-    <nav class="md-nav" aria-label="Metrics">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cpu-throttling" class="md-nav__link">
-    CPU Throttling
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#logs" class="md-nav__link">
-    Logs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#trace" class="md-nav__link">
-    Trace
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-should-be-monitored" class="md-nav__link">
-    What should be monitored
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#alert-incident-response" class="md-nav__link">
-    Alert &amp; Incident Response
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#srecon22" class="md-nav__link">
-    SREcon22
-  </a>
-  
-    <nav class="md-nav" aria-label="SREcon22">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#srecon22-apac-move-fast-and-learn-things-principles-of-cognition-teaming-and-coordination" class="md-nav__link">
-    SREcon22 APAC - Move Fast and Learn Things: Principles of Cognition, Teaming, and Coordination
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resource" class="md-nav__link">
-    Resource
+  <a href="#steps-to-enable-it" class="md-nav__link">
+    Steps to Enable it
   </a>
   
 </li>
@@ -857,133 +597,29 @@
             <article class="md-content__inner md-typeset">
               
                 <!-- Add copied contents from original content.html here -->
-<a href="https://github.com/liuning0820/workforfree/tree/master/docs/SRE/sre.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/liuning0820/workforfree/tree/master/docs/DIY/enable-kubernetes-metrics-server-on-docker-desktop.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-<h1 id="sre-road">SRE Road</h1>
+<h1 id="hands-on-lab-enable-kubernetes-metrics-server-on-docker-desktop">Hands-On Lab: Enable Kubernetes Metrics Server on Docker Desktop</h1>
+<h2 id="prerequisites">Prerequisites</h2>
 <ul>
-<li><a href="#sre-road">SRE Road</a></li>
-<li><a href="#whats-sre">What's SRE</a></li>
-<li><a href="#sre-and-devops-shared-practices">SRE and DevOps Shared practices</a></li>
-<li><a href="#sre-key-principle">SRE Key principle</a></li>
-<li><a href="#sres-mission">SRE's Mission</a></li>
-<li><a href="#sla--slo--sli">SLA \&amp; SLO \&amp; SLI</a></li>
-<li><a href="#the-four-golden-signals">The Four Golden Signals</a></li>
-<li><a href="#sre-budgets">SRE Budgets</a></li>
-<li><a href="#sre-role-expectation">SRE Role Expectation</a></li>
-<li><a href="#observability">Observability</a><ul>
-<li><a href="#metrics">Metrics</a></li>
-<li><a href="#cpu-throttling">CPU Throttling</a></li>
-<li><a href="#logs">Logs</a></li>
-<li><a href="#trace">Trace</a></li>
+<li>Install Docker Desktop</li>
+<li>Enable Kubernetes on Docker Desktop</li>
 </ul>
-</li>
-<li><a href="#what-should-be-monitored">What should be monitored</a></li>
-<li><a href="#alert--incident-response">Alert \&amp; Incident Response</a></li>
-<li><a href="#srecon22">SREcon22</a><ul>
-<li><a href="#srecon22-apac---move-fast-and-learn-things-principles-of-cognition-teaming-and-coordination">SREcon22 APAC - Move Fast and Learn Things: Principles of Cognition, Teaming, and Coordination</a></li>
-</ul>
-</li>
-<li><a href="#resource">Resource</a></li>
-</ul>
-<h2 id="whats-sre">What's SRE</h2>
-<p><code>Site Reliability Engineering</code> is an engineering discipline devoted to helping an organization achieve the appropriate level of reliability in their systems, services, and products.</p>
-<h2 id="sre-and-devops-shared-practices">SRE and DevOps Shared practices</h2>
-<ul>
-<li>Automation</li>
-<li>Monitoring, Observability, Measure</li>
-</ul>
-<h2 id="sre-key-principle">SRE Key principle</h2>
-<ul>
-<li>Build feedback loop that help continuously get better.</li>
-<li>health check indicators (SLI, SLO, error budget)</li>
-<li>Blameless postmortem</li>
-<li>Eliminate toil when it is appropriate</li>
-</ul>
-<h2 id="sres-mission">SRE's Mission</h2>
-<ul>
-<li>
-<p>Reliability - Meet the availability targets the users need</p>
-</li>
-<li>
-<p>Velocity - Maximize the long-term feature velocity.</p>
-</li>
-<li>
-<p>Maintainability - 易于维护</p>
-</li>
-<li>
-<p>Efficiency - 高效利用人力和资源</p>
-</li>
-</ul>
-<h2 id="sla-slo-sli">SLA &amp; SLO &amp; SLI</h2>
-<p>SLA - a promise, economic incentive, or else, we get paged</p>
-<p>SLO - a goal.</p>
-<p>SLI- Service Level Indicator</p>
-<p>reference:</p>
-<ol>
-<li><a href="https://devops.com/sres-stop-asking-your-product-managers-for-slos/">https://devops.com/sres-stop-asking-your-product-managers-for-slos/</a></li>
-</ol>
-<h2 id="the-four-golden-signals">The Four Golden Signals</h2>
-<p>Focus on metrics that tell you insights into the “The Four Golden Signals” of monitoring:</p>
-<ul>
-<li><strong>Latency</strong>: The time it takes to service a request.</li>
-<li><strong>Traffic</strong>: How much demand is being placed on your system.</li>
-<li><strong>Errors</strong>: The rate of failures in your system.</li>
-<li><strong>Saturation</strong>: How “full” is your system — and critically, how much capacity remains.</li>
-</ul>
-<h2 id="sre-budgets">SRE Budgets</h2>
-<ul>
-<li>Performance budgets</li>
-<li>Error Budget</li>
-<li>A service that’s 99.99% available is 0.01% unavailable. That permitted 0.01% unavailability is the service’s error budget.</li>
-<li>Training Budget</li>
-<li>Toil budget</li>
-</ul>
-<h2 id="sre-role-expectation">SRE Role Expectation</h2>
-<ol>
-<li>Set up the platform level monitoring to keep critical applications up and running despite bandwidth outage, and configuration problems.</li>
-<li>Engage in service capacity planning, software performance analysis and system tunning</li>
-<li>Collaborate with Infra team to lead platform level operation optimization （AWS，Akamai，F5，Dockers，DB）</li>
-<li>Conduct on call duties for critical platform issues</li>
-</ol>
-<h2 id="observability">Observability</h2>
-<h3 id="metrics">Metrics</h3>
-<p>time series databases like Prometheus, InfluxDb,Graphite.</p>
-<h4 id="cpu-throttling">CPU Throttling</h4>
-<p><code>CPU throttling</code> is a key application performance metric due to the direct correlation between response time and CPU throttling. </p>
-<p>CPU throttling occurs when you configure a <strong>CPU limit</strong> on a container, which can invertedly slow your application’s response time. Even if you have more than enough resources on your underlying node, your container workload will still be throttled because it was not configured properly.</p>
-<h3 id="logs">Logs</h3>
-<p>Loki, Splunk</p>
-<h3 id="trace">Trace</h3>
-<ul>
-<li>Grafana Tempo with open trace protocal OpenTelemetry</li>
-<li>Zipkin — 微服务链路跟踪 https://zipkin.io/pages/quickstart.html</li>
-<li>Jaeger</li>
-<li>OpenTelemetry https://opentelemetry.io/</li>
-</ul>
-<h2 id="what-should-be-monitored">What should be monitored</h2>
-<ul>
-<li>Service downtime (health check)</li>
-<li>Slow response time</li>
-<li>Errors and crashes events/logs</li>
-<li>Resource usage. Don't waste money on unnecessary resources ( cloud resource watch)</li>
-</ul>
-<p>https://hackernoon.com/node-js-monitoring-done-right-70418ecbbff9</p>
-<h2 id="alert-incident-response">Alert &amp; Incident Response</h2>
-<p>https://engineering.razorpay.com/what-goes-behind-managing-production-alerts-204f186ce865</p>
-<h2 id="srecon22">SREcon22</h2>
-<h3 id="srecon22-apac-move-fast-and-learn-things-principles-of-cognition-teaming-and-coordination">SREcon22 APAC - Move Fast and Learn Things: Principles of Cognition, Teaming, and Coordination</h3>
-<p>Cognitive Work</p>
-<h2 id="resource">Resource</h2>
-<ul>
-<li><a href="https://github.com/linkedin/school-of-sre">https://github.com/linkedin/school-of-sre</a></li>
-<li>Site Reliability Engineering: How Google Runs Production Systems (known as "The SRE Book")</li>
-<li>The Site Reliability Workbook: Practical Ways to Implement SRE (known as "The SRE Workbook")</li>
-<li>Seeking SRE: Conversations About Running Production Systems at Scale</li>
-<li><a href="https://www.usenix.org/conference/srecon14/technical-sessions/presentation/keys-sre">SREcon</a> </li>
-</ul>
+<p>Metrics server isn't included with Docker Desktop's installation of Kubernetes.</p>
+<p>So if you run the below commands you may see messages like: error: Metrics API not available</p>
+<p><img alt="" src="../images/metrics-api-not-available.png" /></p>
+<h2 id="steps-to-enable-it">Steps to Enable it</h2>
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.6.3/components.yaml
+
+<span class="c1"># Edit the components.yaml and add the line --kubelet-insecure-tls under the args section for the container spec.</span>
+
+kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>components.yaml
+</code></pre></div>
+<p>Now if you execute the <code>kubectl top node</code> &amp; <code>kubectl top pod -A</code> commands you should see the output:</p>
+<p><img alt="" src="../images/metrics-api.png" /></p>
 
 <hr>
 <div class="md-source-file">
@@ -1027,7 +663,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../sre-outage-2023/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Outage" rel="prev">
+        <a href="../airplay-with-pi/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 树莓派手机投屏" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1036,20 +672,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Outage
+              树莓派手机投屏
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../mindset/mindset-2023/" class="md-footer__link md-footer__link--next" aria-label="Next: 观念改造2023 - 第一期" rel="next">
+        <a href="../../SRE/sre-outage-2023/" class="md-footer__link md-footer__link--next" aria-label="Next: Outage" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              观念改造2023 - 第一期
+              Outage
             </div>
           </div>
           <div class="md-footer__button md-icon">
