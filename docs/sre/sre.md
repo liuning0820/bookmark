@@ -1,22 +1,24 @@
 # SRE Road
 
-- [What's SRE](#whats-sre)
-- [SRE and DevOps Shared practices](#sre-and-devops-shared-practices)
-- [SRE Key principle](#sre-key-principle)
-- [SRE's Mission](#sres-mission)
-- [SLA \& SLO \& SLI](#sla--slo--sli)
-- [The Four Golden Signals](#the-four-golden-signals)
-- [SRE Budgets](#sre-budgets)
-- [SRE Role Expectation](#sre-role-expectation)
-- [Observability](#observability)
-  - [Metrics](#metrics)
-  - [Logs](#logs)
-  - [Trace](#trace)
-- [What should be monitored](#what-should-be-monitored)
-- [Alert \& Incident Response](#alert--incident-response)
-- [SREcon22](#srecon22)
-  - [SREcon22 APAC - Move Fast and Learn Things: Principles of Cognition, Teaming, and Coordination](#srecon22-apac---move-fast-and-learn-things-principles-of-cognition-teaming-and-coordination)
-- [Resource](#resource)
+- [SRE Road](#sre-road)
+  - [What's SRE](#whats-sre)
+  - [SRE and DevOps Shared practices](#sre-and-devops-shared-practices)
+  - [SRE Key principle](#sre-key-principle)
+  - [SRE's Mission](#sres-mission)
+  - [SLA \& SLO \& SLI](#sla--slo--sli)
+  - [The Four Golden Signals](#the-four-golden-signals)
+  - [SRE Budgets](#sre-budgets)
+  - [SRE Role Expectation](#sre-role-expectation)
+  - [Observability](#observability)
+    - [Metrics](#metrics)
+      - [CPU Throttling](#cpu-throttling)
+    - [Logs](#logs)
+    - [Trace](#trace)
+  - [What should be monitored](#what-should-be-monitored)
+  - [Alert \& Incident Response](#alert--incident-response)
+  - [SREcon22](#srecon22)
+    - [SREcon22 APAC - Move Fast and Learn Things: Principles of Cognition, Teaming, and Coordination](#srecon22-apac---move-fast-and-learn-things-principles-of-cognition-teaming-and-coordination)
+  - [Resource](#resource)
 
 ## What's SRE
 
@@ -86,6 +88,12 @@ Focus on metrics that tell you insights into the “The Four Golden Signals” o
 ### Metrics
 
 time series databases like Prometheus, InfluxDb,Graphite.
+
+#### CPU Throttling
+
+`CPU throttling` is a key application performance metric due to the direct correlation between response time and CPU throttling. 
+
+CPU throttling occurs when you configure a **CPU limit** on a container, which can invertedly slow your application’s response time. Even if you have more than enough resources on your underlying node, your container workload will still be throttled because it was not configured properly.
 
 
 ### Logs
