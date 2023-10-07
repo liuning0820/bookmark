@@ -1,4 +1,4 @@
-# All-in-One Bookmarks
+# Bookmarks
 
 Maintains all frequently used bookmarks in code and host on github page, set as home page on every browsers on every devices for personal use. it is cross browsers and keep in sync with devices.
 
