@@ -2,17 +2,14 @@
 
 ## Prerequisites
 
-- Install Docker Desktop
-- Enable Kubernetes on Docker Desktop
-
+1. Install Docker Desktop
+2. Enable Kubernetes on Docker Desktop
 
 Metrics server isn't included with Docker Desktop's installation of Kubernetes.
 
 So if you run the below commands you may see messages like: error: Metrics API not available
-
-![](images/metrics-api-not-available.png)
-
-## Steps to Enable it
+![metrics-api-not-available](images/metrics-api-not-available.png)
+3. Steps to Enable Metrics server
 
 ```sh
 
@@ -24,6 +21,6 @@ kubectl apply -f components.yaml
 
 ```
 
-Now if you execute the `kubectl top node` & `kubectl top pod -A` commands you should see the output:
+4. Now if you execute the `kubectl top node` & `kubectl top pod -A` commands you should see the output:
 
 ![](images/metrics-api.png)
