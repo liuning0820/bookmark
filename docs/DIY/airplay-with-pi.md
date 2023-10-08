@@ -27,20 +27,14 @@ sudo apt-get install kodi
 
 ### 设置Kodi
 
-打开Kodi,点击齿轮进入系统设置
-
-![](images/kodi-setting.png)
-
-选择服务设置：
-
-![](images/kodi-service-setting.png)
-
-UPnP 中开启远端设备（局域网种的手机）通过UPnP控制KODI所在的设备（树莓派）
-
+1. 打开Kodi,点击齿轮进入系统设置
+![kodi setting](images/kodi-setting.png)
+2. 选择服务设置
+![kodi-service-setting](images/kodi-service-setting.png)
+3. UPnP 中开启远端设备（局域网种的手机）通过UPnP控制KODI所在的设备（树莓派）
 ![](images/allow-remote-control-via-UPnP.png)
 
-打开AirPlay:
-
+4. 打开AirPlay:
 ![](images/enable-airplay-support.png)
 
 ## 测试投屏
@@ -48,7 +42,6 @@ UPnP 中开启远端设备（局域网种的手机）通过UPnP控制KODI所在�
 在iPhone上的咪咕视频软件播放视频，成功投影到树莓派上的kodi。
 
 ![](images/kodi-airplay-success.png)
-
 
 ## Reference
 
