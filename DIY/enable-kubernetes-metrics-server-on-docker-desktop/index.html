@@ -237,7 +237,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../mindset/mindset-2023/" class="md-tabs__link">
+      <a href="../../mindset/mindset-2023-12/" class="md-tabs__link">
         Mindset
       </a>
     </li>
@@ -413,13 +413,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#steps-to-enable-it" class="md-nav__link">
-    Steps to Enable it
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -559,6 +552,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../mindset/mindset-2023-12/" class="md-nav__link">
+        观念改造2023 - 第二期
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../mindset/mindset-2023/" class="md-nav__link">
         观念改造2023 - 第一期
       </a>
@@ -606,13 +613,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#steps-to-enable-it" class="md-nav__link">
-    Steps to Enable it
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -632,21 +632,23 @@
 
 <h1 id="hands-on-lab-enable-kubernetes-metrics-server-on-docker-desktop">Hands-On Lab: Enable Kubernetes Metrics Server on Docker Desktop</h1>
 <h2 id="prerequisites">Prerequisites</h2>
-<ul>
+<ol>
 <li>Install Docker Desktop</li>
 <li>Enable Kubernetes on Docker Desktop</li>
-</ul>
+</ol>
 <p>Metrics server isn't included with Docker Desktop's installation of Kubernetes.</p>
-<p>So if you run the below commands you may see messages like: error: Metrics API not available</p>
-<p><img alt="" src="../images/metrics-api-not-available.png" /></p>
-<h2 id="steps-to-enable-it">Steps to Enable it</h2>
+<p>So if you run the below commands you may see messages like: error: Metrics API not available
+<img alt="metrics-api-not-available" src="../images/metrics-api-not-available.png" />
+3. Steps to Enable Metrics server</p>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.6.3/components.yaml
 
 <span class="c1"># Edit the components.yaml and add the line --kubelet-insecure-tls under the args section for the container spec.</span>
 
 kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>components.yaml
 </code></pre></div>
-<p>Now if you execute the <code>kubectl top node</code> &amp; <code>kubectl top pod -A</code> commands you should see the output:</p>
+<ol>
+<li>Now if you execute the <code>kubectl top node</code> &amp; <code>kubectl top pod -A</code> commands you should see the output:</li>
+</ol>
 <p><img alt="" src="../images/metrics-api.png" /></p>
 
 <hr>
@@ -654,7 +656,7 @@ kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> <
   <small>
     
       Last update:
-      2023-06-21
+      2023-10-08
     
   </small>
 </div>
