@@ -36,8 +36,7 @@ markdown_extensions:
 
 
 # [update as needed] specify the URL to the GitHub repo for this site - included as link top right
-# repo_url: https://github.com/liuning0820/bookmark-as-code
-repo_url: https://github.com/liuning0820/workforfree
+repo_url: https://github.com/liuning0820/bookmark
 # [update as needed] specify the text for repo link - included as link top right
 repo_name: 'GitHub'
 # specify the relative path to markdown files in GitHub repo - typically does not need to be updated
