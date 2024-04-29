@@ -2,7 +2,7 @@
 
 ## 准备条件
 
-参考 <https://workforfree.cn/workforfree/DIY/airplay-with-pi/> 进行kodi 安装。
+参考 <https://workforfree.cn/bookmark/DIY/airplay-with-pi/> 进行kodi 安装。
 
 ## 字幕插件
 
