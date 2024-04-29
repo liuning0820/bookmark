@@ -1,25 +1,5 @@
 # SRE Road
 
-- [SRE Road](#sre-road)
-  - [What's SRE](#whats-sre)
-  - [SRE and DevOps Shared practices](#sre-and-devops-shared-practices)
-  - [SRE Key principle](#sre-key-principle)
-  - [SRE's Mission](#sres-mission)
-  - [SLA \& SLO \& SLI](#sla--slo--sli)
-  - [The Four Golden Signals](#the-four-golden-signals)
-  - [SRE Budgets](#sre-budgets)
-  - [SRE Role Expectation](#sre-role-expectation)
-  - [Observability](#observability)
-    - [Metrics](#metrics)
-      - [CPU Throttling](#cpu-throttling)
-    - [Logs](#logs)
-    - [Trace](#trace)
-  - [What should be monitored](#what-should-be-monitored)
-  - [Alert \& Incident Response](#alert--incident-response)
-  - [SREcon22](#srecon22)
-    - [SREcon22 APAC - Move Fast and Learn Things: Principles of Cognition, Teaming, and Coordination](#srecon22-apac---move-fast-and-learn-things-principles-of-cognition-teaming-and-coordination)
-  - [Resource](#resource)
-
 ## What's SRE
 
 `Site Reliability Engineering` is an engineering discipline devoted to helping an organization achieve the appropriate level of reliability in their systems, services, and products.
