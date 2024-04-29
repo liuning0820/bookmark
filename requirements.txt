@@ -9,3 +9,6 @@ mkdocs-material==9.5.20
 # mkdocs-video==1.1.0
 
 # markupsafe==2.0.1
+
+# Parse your browser's exported HTML bookmark file to Markdown.
+bookmarkdown==0.1.1
