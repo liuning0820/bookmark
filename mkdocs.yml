@@ -1,7 +1,7 @@
 # parameters within this file must be aligned correctly  - be careful 
 #
 # [update as needed] specify name for your site - this is included at top left of page next to logo 
-site_name: Work For Free Handbook
+site_name: Toby's Bookmark
 # this identifies the theme used to control look and feel of this site - generally should unchanged
 # palette colours defined to adhere to DXC branding colours
 # logo controls the image included at top left
@@ -10,7 +10,6 @@ site_name: Work For Free Handbook
 # included in docs folder that include md files
 
 theme: 
-  # name: readthedocs
   name: material
   custom_dir: overrides
   palette:
@@ -78,6 +77,6 @@ extra:
 plugins:
   - search
   - git-revision-date
-  - mkdocs-video
+  # - mkdocs-video
 
 

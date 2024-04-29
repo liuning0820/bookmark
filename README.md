@@ -2,8 +2,9 @@
 
 ```sh
 
-conda create -n doc-writing-as-code
-conda activate doc-writing-as-code
+conda create -n bookmark python=3.12.2
+
+conda activate bookmark
 
 pip3 install -r requirements.txt
 
