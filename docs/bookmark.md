@@ -19,6 +19,12 @@ Maintains all frequently used bookmarks in code and host on github page, set as 
 
 如果遇到新的有趣的网址，可以随时以代码的形式提交到GitHub上，更新会在任何地方产生作用。
 
+### bookmark html to markdown
+
+https://pypi.org/project/bookmarkdown/
+
+https://github.com/gullwing-io/bookworms/blob/main/src/convert-bookmarks.js
+
 ## Tools
 
 - 数据生成图表 - <https://www.datawrapper.de/charts>
