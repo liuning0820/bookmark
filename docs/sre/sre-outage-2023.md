@@ -1,11 +1,6 @@
 
 # Outage
 
-- [DNS Outage on 2023-01-25](#dns-outage-on-2023-01-25)
-  - [Root Cause of the Outage](#root-cause-of-the-outage)
-  - [Resolution](#resolution)
-  - [Postmortem](#postmortem)
-
 ## DNS Outage on 2023-01-25
 
 On Wednesday, 2023-01-25 at 09:15 UTC, we deployed changes to the production infrastructure for crates.io. During the deployment, the DNS record for static.crates.io failed to resolve for an estimated time of 10-15 minutes. Users experienced build failures during this time, because crates could not be downloaded. Around 9:30 UTC, the DNS record started to get propagated again and by 9:40 UTC traffic had returned to normal levels.
