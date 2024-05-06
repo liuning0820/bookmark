@@ -52,10 +52,10 @@ mkdocs gh-deploy
 
 ```
 
-## Convert "bookmarks.html" to markdown and write to "index.md"
+## Convert "bookmarks.html" to markdown and write to "bookmark.md"
 
 ```sh
-btm bookmarks.html > index.md
+btm bookmarks.html > bookmark.md
 ```
 
 

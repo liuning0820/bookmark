@@ -9,6 +9,11 @@ site_name: Toby's bookmark
 # features enabled the top menu - actual include items included in based on sub-folders 
 # included in docs folder that include md files
 
+nav:
+  - Home: index.md
+  - Bookmark - Markdown Format: bookmark.md
+  - Bookmark - HTML Format: bookmark.html
+
 theme: 
   name: material
   custom_dir: overrides
