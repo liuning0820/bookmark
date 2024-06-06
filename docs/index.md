@@ -1,3 +1,3 @@
-- [Bookmark - Markdown Format](/bookmark)
+- [Bookmark - Markdown Format](./bookmark.md)
 
-- [Bookmark - HTML Format](/bookmark.html)
+- [Bookmark - HTML Format](./bookmark.html)
