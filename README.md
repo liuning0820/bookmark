@@ -53,12 +53,12 @@ mkdocs gh-deploy
 
 ```
 
-## Convert "bookmarks.html" to markdown and write to "bookmark.md"
+## Convert "bookmark.html" to markdown and write to "bookmark.md"
 
 ```sh
-btm bookmarks.html > bookmark.md
+python ./src/btm.py ./docs/bookmark.html > ./docs/bookmark.md
+python ./src/btm.py ./docs/bookmark-edge.html > ./docs/bookmark-edge.md
 ```
-
 
 ## Reference
 

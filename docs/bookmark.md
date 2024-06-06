@@ -1,8 +1,3 @@
-# Top & Frequently Access Site
-
-* [Stack Overflow](https://stackoverflow.com/)
-* [goFluent](https://portal.gofluent.com/group/client/)
-
 # News
 
 * [台湾](https://tw.tv.yahoo.com/)
@@ -14,7 +9,6 @@
 
 #  Email Blog RSS
 
-* [私人邮箱outlook.com](https://outlook.live.com/owa/)
 * [百度搜索资源平台](https://ziyuan.baidu.com/dashboard/index)
 * [Bing网站管理员](https://www.bing.com/webmaster/home/dashboard)
 * [GitHub-Pages](https://liuning0820.github.io/)
@@ -278,3 +272,9 @@
 * [Tech Interviews](https://www.techinterviews.com/)
 * [伯乐在线](https://www.jobbole.com/)
 * [前程无忧](https://www.51job.com/)
+* [有道翻译](http://fanyi.youdao.com/)
+* [Bing-Translator](https://cn.bing.com/translator)
+* [汉典](https://www.zdic.net/)
+* [海词词典](https://dict.cn/)
+* [google-dict](https://translate.google.cn)
+
