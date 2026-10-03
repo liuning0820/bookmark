@@ -10,7 +10,13 @@ This file was automatically generated - do not edit
 {% if not "\x3ch1" in page.content %}
 <h1>{{ page.title | d(config.site_name, true)}}</h1>
 {% endif %}
+{% if page and page.meta and page.meta.page_class %}
+<div class="{{ page.meta.page_class }}">
+{% endif %}
 {{ page.content }}
+{% if page and page.meta and page.meta.page_class %}
+</div>
+{% endif %}
 {% if page and page.meta and (
 page.meta.git_revision_date_localized or
 page.meta.revision_date

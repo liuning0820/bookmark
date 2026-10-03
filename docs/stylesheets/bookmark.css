@@ -1,0 +1,193 @@
+/* Compact navigation layout for the curated bookmark page. */
+.md-main__inner:has(.bookmark-home) {
+  max-width: 92rem;
+}
+
+.md-content:has(.bookmark-home) {
+  min-width: 0;
+}
+
+.bookmark-home {
+  --bookmark-border: rgba(63, 81, 181, 0.18);
+  --bookmark-surface: rgba(63, 81, 181, 0.045);
+  --bookmark-surface-strong: rgba(63, 81, 181, 0.09);
+  --bookmark-shadow: 0 0.25rem 1rem rgba(20, 24, 40, 0.06);
+  padding-bottom: 1.5rem;
+}
+
+[data-md-color-scheme="slate"] .bookmark-home {
+  --bookmark-border: rgba(138, 150, 255, 0.22);
+  --bookmark-surface: rgba(138, 150, 255, 0.07);
+  --bookmark-surface-strong: rgba(138, 150, 255, 0.13);
+  --bookmark-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.18);
+}
+
+.bookmark-home > h1 {
+  margin-bottom: 0.2rem;
+  font-size: clamp(1.65rem, 4vw, 2.35rem);
+  font-weight: 750;
+  letter-spacing: -0.025em;
+}
+
+.bookmark-home > h1 + p {
+  max-width: 48rem;
+  margin-top: 0;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.82rem;
+}
+
+.bookmark-favorites {
+  margin: 1.25rem 0 1.5rem;
+  padding: 1rem 1.1rem 1.1rem;
+  border: 1px solid var(--bookmark-border);
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, var(--bookmark-surface-strong), var(--bookmark-surface));
+  box-shadow: var(--bookmark-shadow);
+}
+
+.bookmark-favorites h2,
+.bookmark-card h2 {
+  margin: 0;
+  color: var(--md-default-fg-color);
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.bookmark-favorites h2 + p,
+.bookmark-card h2 + p,
+.bookmark-card h3 + p {
+  margin: 0.25rem 0 0.55rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.67rem;
+  line-height: 1.45;
+}
+
+.bookmark-favorites ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+  gap: 0.45rem;
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bookmark-favorites li,
+.bookmark-card li {
+  margin: 0;
+}
+
+.bookmark-favorites a {
+  display: flex;
+  min-height: 2.25rem;
+  align-items: center;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid var(--bookmark-border);
+  border-radius: 0.5rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-typeset-a-color);
+  font-size: 0.72rem;
+  font-weight: 650;
+  line-height: 1.25;
+  transition: border-color 120ms ease, box-shadow 120ms ease, transform 120ms ease;
+}
+
+.bookmark-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+  align-items: start;
+}
+
+.bookmark-card {
+  min-width: 0;
+  padding: 0.9rem 1rem 1rem;
+  border: 1px solid var(--bookmark-border);
+  border-radius: 0.7rem;
+  background: var(--md-default-bg-color);
+  box-shadow: var(--bookmark-shadow);
+}
+
+.bookmark-card h3 {
+  margin: 0.9rem 0 0;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--bookmark-border);
+  color: var(--md-default-fg-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.bookmark-card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.32rem;
+  margin: 0.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bookmark-card a {
+  display: inline-flex;
+  min-height: 1.75rem;
+  align-items: center;
+  padding: 0.25rem 0.48rem;
+  border: 1px solid transparent;
+  border-radius: 0.38rem;
+  background: var(--bookmark-surface);
+  color: var(--md-typeset-a-color);
+  font-size: 0.66rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+  transition: background-color 120ms ease, border-color 120ms ease, transform 120ms ease;
+}
+
+.bookmark-favorites a:hover,
+.bookmark-card a:hover {
+  border-color: var(--md-accent-fg-color);
+  background: var(--bookmark-surface-strong);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.bookmark-favorites a:focus-visible,
+.bookmark-card a:focus-visible {
+  outline: 0.12rem solid var(--md-accent-fg-color);
+  outline-offset: 0.12rem;
+}
+
+@media screen and (max-width: 76.24em) {
+  .bookmark-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 44.99em) {
+  .bookmark-home {
+    padding-bottom: 0.75rem;
+  }
+
+  .bookmark-favorites {
+    margin: 0.9rem 0 1rem;
+    padding: 0.85rem;
+  }
+
+  .bookmark-favorites ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bookmark-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.7rem;
+  }
+
+  .bookmark-card {
+    padding: 0.85rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bookmark-home a {
+    transition: none;
+  }
+}
