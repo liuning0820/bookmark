@@ -58,7 +58,7 @@ edit_uri: tree/master/docs/
 #       link: 'https://liuning0820.github.io/'
 
 extra:
-  disqus: "sufer"
+  # disqus: "sufer"  # 关闭 giscus 评论组件（避免 "giscus is not installed" 报错）
   generator: false
   social:
     - icon: material/home

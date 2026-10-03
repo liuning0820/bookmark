@@ -5,6 +5,7 @@ Maintains all frequently used bookmarks in code and host on the web(ex.github pa
 ## Bookmark Sync Solution
 
 - Xmarks Bookmarks sync between browsers
+- Raindrop.io <https://app.raindrop.io/my/0/> - Browser Extension sync Bookmarks between browsers
 - ChromeExtension "Bookmarks Anywhere" and access using html.
 - An html format bookmark file be set as home page across devices and sync between browsers.
   - When saved in OneDrive or GitHub, can sync the bookmarks across devices and network.

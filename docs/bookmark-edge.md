@@ -13,11 +13,11 @@
 
 * [B2 Cloud Storage Buckets](https://secure.backblaze.com/b2_buckets.htm)
 * [azure-nginx](http://china-devops.eastasia.cloudapp.azure.com/)
-* [Home | REDACTED's Account | Cloudflare](https://dash.cloudflare.com/)
+* [Home | Cloudflare Dashboard](https://dash.cloudflare.com/)
 * [vscode-dev](https://vscode.dev/)
 * [liuning0820 Overview | Grafana Labs](https://grafana.com/orgs/liuning0820)
 * [Cloudflare Radar](https://radar.cloudflare.com/)
-* [Get started with Workers & Pages | REDACTED's Account | Cloudflare](https://dash.cloudflare.com//workers-and-pages/create)
+* [Get started with Workers & Pages | Cloudflare Dashboard](https://dash.cloudflare.com/)
 * [Go Playground - The Go Programming Language](https://go.dev/play/)
 * [iCloud](https://www.icloud.com.cn/)
 * [Substack Home - Toby’s Substack](https://liuning0820.substack.com/publish/home)
