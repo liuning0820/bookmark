@@ -321,7 +321,6 @@ hide:
 - [QQ 音乐](https://y.qq.com/)
 - [喜马拉雅](http://www.ximalaya.com/explore/)
 - [造就](https://www.zaojiu.com)
-- [Soomal](http://soomal.com)
 - [Deepwork.fm](https://deepwork.fm/)
 - [Changelog Podcasts](https://changelog.com/)
 - [This American Life](https://www.thisamericanlife.org/)
