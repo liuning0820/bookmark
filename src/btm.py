@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+"""Legacy bulk importer for browser-exported HTML bookmarks.
+
+This utility emits plain Markdown and doesn't preserve the custom card layout
+in ``docs/bookmark.md``. Use ``sync_chrome_bookmarks.py`` for incremental sync
+from a local Chrome ``AccountBookmarks`` file.
+"""
 
 from __future__ import annotations
 
@@ -104,7 +110,10 @@ class BookmarkHTMLParser(HTMLParser):
 
 def _parse_args():
     parser = argparse.ArgumentParser(
-        description=("Parse your browser's exported HTML bookmark file to Markdown.")
+        description=(
+            "Legacy bulk import: convert browser-exported HTML bookmarks to "
+            "plain Markdown. The output doesn't preserve the custom bookmark page layout."
+        )
     )
     parser.add_argument("file", help="The HTML file containing the exported bookmarks")
     parser.add_argument(

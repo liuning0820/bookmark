@@ -499,4 +499,26 @@ hide:
 
 </section>
 
+<!-- BEGIN CHROME ACCOUNTBOOKMARKS AUTO-SYNC -->
+<section class="bookmark-card" markdown>
+
+## Chrome 自动同步
+
+此区块由 `src/sync_chrome_bookmarks.py` 从 Chrome 自动生成。
+不要手动编辑标记之间的内容。
+
+- **Tools**
+  - [Online Python - IDE, Editor, Compiler, Interpreter](<https://www.online-python.com/>)
+  - [Bing Microsoft Translator](<https://cn.bing.com/translator?ref=TThis&&text=&from=&to=zh-Hans>)
+  - [Tesla: TSLA Stock Price Quote & News | Robinhood](<https://robinhood.com/us/en/stocks/TSLA/>)
+- **read**
+  - [internet-archive](<https://archive.org/>)
+  - [PLOS One](<https://journals.plos.org/plosone/>)
+  - [google book](<https://books.google.com/>)
+  - [首页 - 上海图书馆](<https://www.library.sh.cn/>)
+  - [典津 - 全球汉籍影像开放集成系统 AI驱动版](<https://guji.cckb.cn/>)
+
+</section>
+<!-- END CHROME ACCOUNTBOOKMARKS AUTO-SYNC -->
+
 </div>
