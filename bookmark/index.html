@@ -20,7 +20,7 @@
     
     
       
-        <title>Bookmark - Markdown Format - Toby's bookmark</title>
+        <title>书签导航 - Toby's bookmark</title>
       
     
     
@@ -46,6 +46,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/bookmark.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -68,6 +70,8 @@
   
     
     
+      
+    
     
     
     
@@ -80,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#news" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bookmark - Markdown Format
+              书签导航
             
           </span>
         </div>
@@ -123,7 +127,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -149,6 +179,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -214,7 +246,7 @@
   
     
   
-  Bookmark - Markdown Format
+  书签导航
 
       </a>
     </li>
@@ -254,6 +286,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -324,15 +358,471 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    书签导航
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Bookmark - Markdown Format
+    书签导航
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      常用导航
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      资讯与社区
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="资讯与社区">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      新闻与论坛
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      社交与活动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      搜索与资料
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      内容发布
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#devops" class="md-nav__link">
+    <span class="md-ellipsis">
+      云与 DevOps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="云与 DevOps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      云平台与存储
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devops_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      DevOps 与容器
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      日常工具
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="日常工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      效率与文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      翻译与字典
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      开发工具
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="开发工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      文本与数据
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      开发参考
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web 设计
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      网络与安全
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="网络与安全">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      网络诊断
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      安全检查
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      网站运营
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据与物联网
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数据与物联网">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      物联网
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      影音与创作
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="影音与创作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      音乐与播客
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      图片与图表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      视频
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      阅读与文化
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="阅读与文化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      图书馆与图书
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      博物馆
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microsoft" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microsoft
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Microsoft">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      文档与社区
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      生活与健康
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="生活与健康">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      健身
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      购物与出行
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      上海公共服务
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      学习与职场
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="学习与职场">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      在线课程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      少儿编程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      职业发展
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -366,7 +856,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -377,6 +869,440 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      常用导航
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      资讯与社区
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="资讯与社区">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      新闻与论坛
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      社交与活动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      搜索与资料
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      内容发布
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#devops" class="md-nav__link">
+    <span class="md-ellipsis">
+      云与 DevOps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="云与 DevOps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      云平台与存储
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devops_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      DevOps 与容器
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      日常工具
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="日常工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      效率与文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      翻译与字典
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      开发工具
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="开发工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      文本与数据
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      开发参考
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web 设计
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      网络与安全
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="网络与安全">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      网络诊断
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      安全检查
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      网站运营
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据与物联网
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数据与物联网">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      物联网
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      影音与创作
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="影音与创作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      音乐与播客
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      图片与图表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      视频
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      阅读与文化
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="阅读与文化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      图书馆与图书
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      博物馆
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microsoft" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microsoft
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Microsoft">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      文档与社区
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      生活与健康
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="生活与健康">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      健身
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      购物与出行
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      上海公共服务
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      学习与职场
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="学习与职场">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      在线课程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      少儿编程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      职业发展
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -394,283 +1320,413 @@
 </a>
 
 
-<h1 id="news">News</h1>
+
+<div class="bookmark-home">
+
+<h1 id="_1">书签导航</h1>
+<p>快速访问常用站点，或使用页面顶部的搜索查找全部书签。</p>
+<section class="bookmark-favorites">
+<h2 id="_2">常用导航</h2>
+<p>这里集中显示日常使用频率较高的入口。</p>
 <ul>
-<li><a href="https://tw.tv.yahoo.com/">台湾</a></li>
-<li><a href="https://okapi.books.com.tw/">博客来</a></li>
-</ul>
-<h1 id="_1">健身体育</h1>
-<ul>
-<li><a href="https://musclewiki.com/">muscle wiki</a></li>
-</ul>
-<h1 id="email-blog-rss">Email Blog RSS</h1>
-<ul>
-<li><a href="https://ziyuan.baidu.com/dashboard/index">百度搜索资源平台</a></li>
-<li><a href="https://www.bing.com/webmaster/home/dashboard">Bing网站管理员</a></li>
-<li><a href="https://liuning0820.github.io/">GitHub-Pages</a></li>
-<li><a href="https://toby0820.wordpress.com/">wordpress blogs</a></li>
-<li><a href="https://www.cnblogs.com/liuning0820/">博客园-对刘谈心</a></li>
-<li><a href="https://mp.weixin.qq.com">微信公众号-对刘谈心</a></li>
-<li><a href="https://www.jianshu.com/">简书</a></li>
-<li><a href="https://onedrive.live.com/view.aspx?resid=CF235972F1205FD%21134371&amp;id=documents">OneNote</a></li>
-<li><a href="https://www.reddit.com/">reddit</a></li>
+<li><a href="https://github.com">GitHub</a></li>
+<li><a href="https://www.google.com/ncr">Google 搜索</a></li>
 <li><a href="https://news.ycombinator.com/">Hacker News</a></li>
+<li><a href="https://www.zhihu.com/">知乎</a></li>
+<li><a href="https://www.youtube.com/">YouTube</a></li>
+<li><a href="https://www.bilibili.com">哔哩哔哩</a></li>
+<li><a href="https://onedrive.live.com/">OneDrive</a></li>
+<li><a href="https://filehelper.weixin.qq.com/">微信文件传输助手</a></li>
+<li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+<li><a href="https://devdocs.io/">DevDocs</a></li>
+<li><a href="https://regex101.com/">Regex101</a></li>
+<li><a href="https://cn.bing.com/translator">Bing 翻译</a></li>
 </ul>
-<h1 id="social-co-creation">social &amp; co-creation 社区</h1>
+</section>
+<div class="bookmark-grid">
+<section class="bookmark-card">
+<h2 id="_3">资讯与社区</h2>
+<p>浏览新闻、技术社区、趋势和公开资料。</p>
+<h3 id="_4">新闻与论坛</h3>
+<p>这些站点提供新闻、讨论和行业内容。</p>
 <ul>
-<li><a href="https://www.douban.com/">douban-豆瓣网</a></li>
+<li><a href="https://tw.tv.yahoo.com/">台湾 Yahoo TV</a></li>
+<li><a href="https://okapi.books.com.tw/">博客来 OKAPI</a></li>
+<li><a href="https://www.reddit.com/">Reddit</a></li>
+<li><a href="https://news.ycombinator.com/">Hacker News</a></li>
+<li><a href="https://www.douban.com/">豆瓣</a></li>
+<li><a href="https://www.zhihu.com/">知乎</a></li>
+<li><a href="https://www.quora.com/">Quora</a></li>
+<li><a href="https://www.infoq.com/cn/">InfoQ 中文</a></li>
+<li><a href="https://medium.com">Medium</a></li>
+<li><a href="https://segmentfault.com/">SegmentFault 思否</a></li>
+<li><a href="https://serverfault.com">Server Fault</a></li>
+<li><a href="https://zh.wikihow.com/">wikiHow</a></li>
+</ul>
+<h3 id="_5">社交与活动</h3>
+<p>这些入口连接社交平台、活动和在线会议。</p>
+<ul>
 <li><a href="https://www.linkedin.com/company/1025?trk=tyah">LinkedIn</a></li>
 <li><a href="https://github.com">GitHub</a></li>
 <li><a href="https://gist.github.com/">GitHub Gist</a></li>
-<li><a href="https://github.com/trending">GitHub-trending</a></li>
-<li><a href="https://www.zhihu.com/">知乎</a></li>
-<li><a href="https://www.quora.com/">quora</a></li>
+<li><a href="https://github.com/trending">GitHub Trending</a></li>
 <li><a href="https://www.youtube.com/">YouTube</a></li>
-<li><a href="https://serverfault.com">serverfault</a></li>
-<li><a href="https://www.infoq.com/cn/">InfoQ</a></li>
-<li><a href="https://zh.wikihow.com/">wikiHow</a></li>
-<li><a href="https://btsync.space/keys">bt-sync-key </a></li>
-<li><a href="https://serviceagent.visualstudio.com/">visual-studio-team-service</a></li>
-<li><a href="https://www.thoughtworks.com/cn/radar">thoughtworks技术雷达</a></li>
-<li><a href="https://medium.com">medium</a></li>
-<li><a href="https://segmentfault.com/">segmentfault-思否</a></li>
-<li><a href="https://www.draw.io/">draw.io</a></li>
-<li><a href="https://drawio-app.com/tutorials">draw.io training</a></li>
-<li><a href="https://www.websequencediagrams.com/">Web Sequence Diagrams</a></li>
-<li><a href="https://docs.google.com/drawings">Google Drawings</a></li>
-<li><a href="https://discord.com/">discord</a></li>
-<li><a href="https://www.meetup.com">meetup</a></li>
+<li><a href="https://discord.com/">Discord</a></li>
+<li><a href="https://www.meetup.com">Meetup</a></li>
 <li><a href="https://www.itdks.com">IT 大咖说</a></li>
 <li><a href="https://meeting.qq.com">腾讯会议</a></li>
-<li><a href="https://www.usenix.org/conferences/multimedia">usenix 会议</a></li>
-<li><a href="http://www.google.com/ncr">google-search</a></li>
-<li><a href="https://trends.google.com/trends/?geo=CN">Google Trends</a></li>
-<li><a href="https://www.seebug.org/"> seebug</a></li>
-<li><a href="https://en.wikipedia.org/">wikipedia-english</a></li>
-<li><a href="https://zh.wikipedia.org">wikipedia-chinese</a></li>
-<li><a href="https://archive.org">internet-archive 互联网档案馆 </a></li>
+<li><a href="https://www.usenix.org/conferences/multimedia">USENIX 会议</a></li>
+<li><a href="https://www.thoughtworks.com/cn/radar">Thoughtworks 技术雷达</a></li>
+<li><a href="https://serviceagent.visualstudio.com/">Visual Studio Team Services</a></li>
+<li><a href="https://btsync.space/keys">BT Sync Key</a></li>
 </ul>
-<h2 id="cloud-development">Cloud Development</h2>
+<h3 id="_6">搜索与资料</h3>
+<p>这些站点用于检索趋势、百科和历史网页。</p>
 <ul>
-<li><a href="https://aws.amazon.com/cn/console/">AWS</a></li>
+<li><a href="https://www.google.com/ncr">Google 搜索</a></li>
+<li><a href="https://trends.google.com/trends/?geo=CN">Google Trends</a></li>
+<li><a href="https://www.seebug.org/">Seebug</a></li>
+<li><a href="https://en.wikipedia.org/">Wikipedia English</a></li>
+<li><a href="https://zh.wikipedia.org">Wikipedia 中文</a></li>
+<li><a href="https://archive.org">Internet Archive</a></li>
+</ul>
+<h3 id="_7">内容发布</h3>
+<p>这些入口用于管理博客、公众号和网站索引。</p>
+<ul>
+<li><a href="https://ziyuan.baidu.com/dashboard/index">百度搜索资源平台</a></li>
+<li><a href="https://www.bing.com/webmaster/home/dashboard">Bing 网站管理员</a></li>
+<li><a href="https://liuning0820.github.io/">GitHub Pages</a></li>
+<li><a href="https://toby0820.wordpress.com/">WordPress 博客</a></li>
+<li><a href="https://www.cnblogs.com/liuning0820/">博客园：对刘谈心</a></li>
+<li><a href="https://mp.weixin.qq.com">微信公众号</a></li>
+<li><a href="https://www.jianshu.com/">简书</a></li>
+<li><a href="https://onedrive.live.com/view.aspx?resid=CF235972F1205FD%21134371&amp;id=documents">OneNote</a></li>
+</ul>
+</section>
+<section class="bookmark-card">
+<h2 id="devops">云与 DevOps</h2>
+<p>访问云平台、容器、自动化和可观测性工具。</p>
+<h3 id="_8">云平台与存储</h3>
+<p>这些入口用于管理云资源、托管和存储服务。</p>
+<ul>
+<li><a href="https://aws.amazon.com/cn/console/">AWS 控制台</a></li>
 <li><a href="https://portal.azure.com">Azure Portal</a></li>
 <li><a href="https://www.huaweicloud.com">华为云</a></li>
-<li><a href="https://devcloud.huaweicloud.com/cloudide/home">CloudIDE-华为云</a></li>
-<li><a href="https://app.netlify.com/teams/liuning0820/sites">Netlify- hosting static websites in Cloud</a></li>
-<li><a href="https://drive.google.com/drive/my-drive">GoogleDriver</a></li>
+<li><a href="https://devcloud.huaweicloud.com/cloudide/home">华为云 CloudIDE</a></li>
+<li><a href="https://app.netlify.com/teams/liuning0820/sites">Netlify</a></li>
+<li><a href="https://drive.google.com/drive/my-drive">Google Drive</a></li>
 <li><a href="https://onedrive.live.com/">OneDrive</a></li>
-<li><a href="https://console.filebase.com/">Filebase - S3</a></li>
-<li><a href="https://customer.cloudkarafka.com/instance/">cloudkarafka</a></li>
-<li><a href="https://www.cloudamqp.com/">cloudampq-RabbitMQ as a service</a></li>
+<li><a href="https://console.filebase.com/">Filebase S3</a></li>
+<li><a href="https://customer.cloudkarafka.com/instance/">CloudKarafka</a></li>
+<li><a href="https://www.cloudamqp.com/">CloudAMQP</a></li>
 </ul>
-<h2 id="devops">DevOps</h2>
+<h3 id="devops_1">DevOps 与容器</h3>
+<p>这些资源涵盖持续交付、容器和自动化。</p>
 <ul>
 <li><a href="https://dev.azure.com">Azure DevOps</a></li>
-<li><a href="https://xebialabs.com/vote/">xebialabs:Enterprise DevOps</a></li>
+<li><a href="https://xebialabs.com/vote/">Digital.ai DevOps</a></li>
 <li><a href="http://www.uwintech.cn/_blog">优维科技</a></li>
-<li><a href="https://docs.docker.com">Docker Doc</a></li>
-<li><a href="https://labs.play-with-docker.com/">Play-with-Docker-Labs</a></li>
-<li><a href="https://training.play-with-kubernetes.com/">Play with Kubernetes Classroom</a></li>
-<li><a href="https://github.com/helm/helm">Helm:The Kubernetes Package Manager</a></li>
-<li><a href="https://minikube.sigs.k8s.io/docs/">minikube:Local Kubernetes</a></li>
-<li><a href="https://jenkins.io/doc/book/">Jenkins Doc</a></li>
-<li><a href="https://docs.ansible.com/">ansible Doc</a></li>
-<li><a href="https://www.jfrogchina.com">Artifactory Doc</a></li>
-<li><a href="https://www.jfrogchina.com/open-source/">Artifactory Free Version</a></li>
-<li><a href="https://www.jfrog.com/confluence/display/RTF/Installing+with+Docker">Install Artifactory</a></li>
-<li><a href="https://www.datadoghq.com/">datadog</a></li>
+<li><a href="https://docs.docker.com">Docker 文档</a></li>
+<li><a href="https://labs.play-with-docker.com/">Play with Docker</a></li>
+<li><a href="https://training.play-with-kubernetes.com/">Play with Kubernetes</a></li>
+<li><a href="https://github.com/helm/helm">Helm</a></li>
+<li><a href="https://minikube.sigs.k8s.io/docs/">Minikube</a></li>
+<li><a href="https://jenkins.io/doc/book/">Jenkins 文档</a></li>
+<li><a href="https://docs.ansible.com/">Ansible 文档</a></li>
+<li><a href="https://www.jfrogchina.com">JFrog Artifactory</a></li>
+<li><a href="https://www.jfrogchina.com/open-source/">Artifactory 开源版</a></li>
+<li><a href="https://www.jfrog.com/confluence/display/RTF/Installing+with+Docker">使用 Docker 安装 Artifactory</a></li>
+<li><a href="https://www.datadoghq.com/">Datadog</a></li>
 </ul>
-<h1 id="iot">IOT</h1>
+</section>
+<section class="bookmark-card">
+<h2 id="_9">日常工具</h2>
+<p>快速完成计时、文件传输、地图和格式转换等任务。</p>
+<h3 id="_10">效率与文件</h3>
+<p>这些轻量工具适合高频日常操作。</p>
+<ul>
+<li><a href="https://e.ggtimer.com/">E.gg Timer</a></li>
+<li><a href="https://www.timeanddate.com/worldclock/">世界时钟</a></li>
+<li><a href="https://www.slant.co/">Slant 产品比较</a></li>
+<li><a href="https://time.is/">Time.is</a></li>
+<li><a href="https://filehelper.weixin.qq.com/">微信文件传输助手</a></li>
+<li><a href="https://www.openstreetmap.org">OpenStreetMap</a></li>
+<li><a href="https://earth.google.com/web/">Google Earth</a></li>
+<li><a href="https://send.firefox.com/">Firefox Send</a></li>
+<li><a href="https://slides.com/">Slides</a></li>
+<li><a href="https://gotranscript.com/subtitle-converter">字幕转换</a></li>
+<li><a href="https://www.writage.com/#benefits">Writage</a></li>
+<li><a href="https://www.jdoodle.com/">JDoodle 在线编辑器</a></li>
+</ul>
+<h3 id="_11">翻译与字典</h3>
+<p>这些入口用于中英文翻译和字词查询。</p>
+<ul>
+<li><a href="http://fanyi.youdao.com/">有道翻译</a></li>
+<li><a href="https://cn.bing.com/translator">Bing 翻译</a></li>
+<li><a href="https://translate.google.cn">Google 翻译</a></li>
+<li><a href="https://www.zdic.net/">汉典</a></li>
+<li><a href="https://dict.cn/">海词词典</a></li>
+</ul>
+</section>
+<section class="bookmark-card">
+<h2 id="_12">开发工具</h2>
+<p>使用在线工具处理代码、数据格式和 Web 资源。</p>
+<h3 id="_13">文本与数据</h3>
+<p>这些工具用于验证、转换和调试结构化数据。</p>
+<ul>
+<li><a href="https://regex101.com/">Regex101</a></li>
+<li><a href="https://www.regexpal.com/">RegexPal</a></li>
+<li><a href="https://crontab.guru/">Crontab Guru</a></li>
+<li><a href="https://explainshell.com/">ExplainShell</a></li>
+<li><a href="https://validator.w3.org/">HTML Validator</a></li>
+<li><a href="https://www.w3schools.com/xml/xml_validator.asp">XML Validator</a></li>
+<li><a href="https://jsonlint.com/">JSONLint</a></li>
+<li><a href="https://jsoneditoronline.org/">JSON Editor Online</a></li>
+<li><a href="https://www.json.org/">JSON.org</a></li>
+<li><a href="https://www.base64encode.org/">Base64 Encode</a></li>
+<li><a href="https://www.epochconverter.com/">Unix 时间戳转换</a></li>
+<li><a href="https://jwt.ms/">JWT.ms</a></li>
+<li><a href="https://httpbin.org/ip">httpbin IP</a></li>
+<li><a href="https://pwgen.io/en/">随机密码</a></li>
+<li><a href="https://www.random.org/passwords/?num=5&amp;len=8&amp;format=plain&amp;rnd=new/">Random.org 密码生成器</a></li>
+</ul>
+<h3 id="_14">开发参考</h3>
+<p>这些站点提供开发文档、教程和在线实验环境。</p>
+<ul>
+<li><a href="https://devdocs.io/">DevDocs</a></li>
+<li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+<li><a href="https://eloquentjavascript.net/">Eloquent JavaScript</a></li>
+<li><a href="https://developer.yahoo.com/">Yahoo Developer Network</a></li>
+<li><a href="https://jquery.com/">jQuery</a></li>
+<li><a href="https://jsbin.com">JS Bin</a></li>
+<li><a href="https://jsfiddle.net/">JSFiddle</a></li>
+<li><a href="https://www.jslint.com/">JSLint</a></li>
+<li><a href="https://www.w3school.com.cn/">W3School 中文</a></li>
+<li><a href="https://www.w3schools.com/default.asp">W3Schools</a></li>
+<li><a href="https://vim.rtorr.com/">Vim Cheat Sheet</a></li>
+</ul>
+<h3 id="web">Web 设计</h3>
+<p>这些工具用于压缩资源、选择颜色和检查网站质量。</p>
+<ul>
+<li><a href="https://www.csscompressor.com/">CSS Compressor</a></li>
+<li><a href="https://cn.spritegen.website-performance.org/">CSS Sprite Generator</a></li>
+<li><a href="https://fontawesome.com/icons">Font Awesome</a></li>
+<li><a href="https://color.adobe.com/zh/create/color-contrast-analyzer">Adobe Color</a></li>
+<li><a href="https://webdevchecklist.com/aspnet">Web Developer Checklist</a></li>
+<li><a href="https://logomakerr.ai/make">Logo Maker</a></li>
+</ul>
+</section>
+<section class="bookmark-card">
+<h2 id="_15">网络与安全</h2>
+<p>查询网络信息，并访问常用的安全检查资源。</p>
+<h3 id="_16">网络诊断</h3>
+<p>这些工具用于检查地址、网段、路由和浏览器信息。</p>
+<ul>
+<li><a href="https://www.speedtest.net/">Speedtest</a></li>
+<li><a href="https://www.maxmind.com/en/home">MaxMind</a></li>
+<li><a href="https://db-ip.com/">DB-IP</a></li>
+<li><a href="https://searchdns.netcraft.com/">Netcraft DNS Search</a></li>
+<li><a href="https://www.whatismyip.com">What Is My IP</a></li>
+<li><a href="https://whatismybrowser.com">What Is My Browser</a></li>
+<li><a href="https://ipaddressguide.com/cidr">CIDR Range Check</a></li>
+<li><a href="https://ipduh.com/ip/cidr/">CIDR Validate</a></li>
+<li><a href="https://bgpview.io/">BGPView</a></li>
+</ul>
+<h3 id="_17">安全检查</h3>
+<p>这些资源用于公开漏洞、泄露和 URL 情报查询。</p>
+<ul>
+<li><a href="https://haveibeenpwned.com/">Have I Been Pwned</a></li>
+<li><a href="https://www.exploit-db.com/google-hacking-database">Google Hacking Database</a></li>
+<li><a href="https://urlscan.io/">URLScan</a></li>
+<li><a href="https://www.cve.org/">CVE.org</a></li>
+</ul>
+<h3 id="_18">网站运营</h3>
+<p>这些入口用于查看站点分析和评论数据。</p>
+<ul>
+<li><a href="https://analytics.google.com/analytics/web/">Google Analytics</a></li>
+<li><a href="https://liuning0820.disqus.com/admin/analytics/comments">Disqus 评论分析</a></li>
+</ul>
+</section>
+<section class="bookmark-card">
+<h2 id="_19">数据与物联网</h2>
+<p>访问数据学习资源和物联网平台。</p>
+<h3 id="_20">数据</h3>
+<p>这个入口提供数据分析学习材料。</p>
+<ul>
+<li><a href="https://dataschool.com/">Data School</a></li>
+</ul>
+<h3 id="_21">物联网</h3>
+<p>这些平台用于连接和管理智能设备。</p>
 <ul>
 <li><a href="https://www.particle.io/">Particle</a></li>
 <li><a href="https://www.smartthings.com/">SmartThings</a></li>
 </ul>
-<h1 id="data">Data</h1>
+</section>
+<section class="bookmark-card">
+<h2 id="_22">影音与创作</h2>
+<p>收听音乐和播客，查找图片，并访问视频平台。</p>
+<h3 id="_23">音乐与播客</h3>
+<p>这些站点提供音乐、演讲和播客节目。</p>
 <ul>
-<li><a href="https://dataschool.com/">dataschool</a></li>
-</ul>
-<h2 id="-podcasts">音乐-Podcasts</h2>
-<ul>
-<li><a href="https://douban.fm/">豆瓣FM</a></li>
-<li><a href="https://www.ncpa-classic.com">国家大剧院</a></li>
-<li><a href="https://y.qq.com/">QQ音乐</a></li>
-<li><a href="http://www.ximalaya.com/explore/">喜马拉雅FM</a></li>
+<li><a href="https://douban.fm/">豆瓣 FM</a></li>
+<li><a href="https://www.ncpa-classic.com">国家大剧院古典音乐</a></li>
+<li><a href="https://y.qq.com/">QQ 音乐</a></li>
+<li><a href="http://www.ximalaya.com/explore/">喜马拉雅</a></li>
 <li><a href="https://www.zaojiu.com">造就</a></li>
-<li><a href="http://soomal.com">soomal</a></li>
-<li><a href="https://deepwork.fm/">deepwork.fm</a></li>
-<li><a href="https://changelog.com/">podcasts for developer</a></li>
+<li><a href="http://soomal.com">Soomal</a></li>
+<li><a href="https://deepwork.fm/">Deepwork.fm</a></li>
+<li><a href="https://changelog.com/">Changelog Podcasts</a></li>
 <li><a href="https://www.thisamericanlife.org/">This American Life</a></li>
-<li><a href="https://www.gsb.stanford.edu/business-podcasts">think-fast-talk-smart-podcast</a></li>
-<li><a href="https://37signals.com/podcast/">The REWORK podcast</a></li>
+<li><a href="https://www.gsb.stanford.edu/business-podcasts">Think Fast, Talk Smart</a></li>
+<li><a href="https://37signals.com/podcast/">The REWORK Podcast</a></li>
 </ul>
-<h2 id="free-images">Free Images 图片</h2>
+<h3 id="_24">图片与图表</h3>
+<p>这些资源用于查找免费图片和制作图表。</p>
 <ul>
-<li><a href="https://pixabay.com/">免费图片 from pixabay</a></li>
+<li><a href="https://pixabay.com/">Pixabay</a></li>
 <li><a href="https://www.tesla.com/tesla-gallery">Tesla Gallery</a></li>
-<li><a href="https://unsplash.com/">Free Imagey</a></li>
+<li><a href="https://unsplash.com/">Unsplash</a></li>
+<li><a href="https://www.draw.io/">draw.io</a></li>
+<li><a href="https://drawio-app.com/tutorials">draw.io 教程</a></li>
+<li><a href="https://www.websequencediagrams.com/">Web Sequence Diagrams</a></li>
+<li><a href="https://docs.google.com/drawings">Google Drawings</a></li>
 </ul>
-<h2 id="_2">视频</h2>
+<h3 id="_25">视频</h3>
+<p>这些入口提供视频、电影资料和流媒体内容。</p>
 <ul>
-<li><a href="https://www.bilibili.com">bilibili</a></li>
-<li><a href="https://www.ted.com/"> [TED]</a></li>
-<li><a href="https://www.imdb.com/">[IMDB]</a></li>
-<li><a href="https://movie.douban.com/top250">豆瓣电影top250</a></li>
+<li><a href="https://www.bilibili.com">哔哩哔哩</a></li>
+<li><a href="https://www.ted.com/">TED</a></li>
+<li><a href="https://www.imdb.com/">IMDb</a></li>
+<li><a href="https://movie.douban.com/top250">豆瓣电影 Top 250</a></li>
 <li><a href="https://www.iqiyi.com">爱奇艺</a></li>
-<li><a href="https://www.mgtv.com/">芒果TV</a></li>
+<li><a href="https://www.mgtv.com/">芒果 TV</a></li>
 <li><a href="http://v.qq.com/">腾讯视频</a></li>
-<li><a href="https://thepiratebay3.org">海盗湾</a></li>
+<li><a href="https://thepiratebay3.org">The Pirate Bay</a></li>
 <li><a href="https://www.btmao.cc">BT 猫</a></li>
-<li><a href="https://1337x.to">Torrent files</a></li>
-<li><a href="https://tw.video.yahoo.com">yahoo TV</a></li>
+<li><a href="https://1337x.to">1337x</a></li>
+<li><a href="https://tw.video.yahoo.com">Yahoo TV</a></li>
 </ul>
-<h1 id="_3">图书馆|博物馆</h1>
+</section>
+<section class="bookmark-card">
+<h2 id="_26">阅读与文化</h2>
+<p>访问图书馆、数字馆藏、图书和博物馆资源。</p>
+<h3 id="_27">图书馆与图书</h3>
+<p>这些站点提供公共图书馆和电子图书服务。</p>
 <ul>
 <li><a href="https://db.idoc.sh.cn/">上海图书馆资源库导航</a></li>
 <li><a href="http://www.pdlib.com/">浦东图书馆</a></li>
-<li><a href="https://library.sh.cn">上海图书馆新版</a></li>
-<li><a href="https://e.library.sh.cn/">市民数字阅读</a></li>
+<li><a href="https://library.sh.cn">上海图书馆</a></li>
+<li><a href="https://e.library.sh.cn/">上海市民数字阅读</a></li>
 <li><a href="http://www.nlc.cn/">中国国家图书馆</a></li>
-<li><a href="http://libgen.rs/">外文书籍下载</a></li>
+<li><a href="http://libgen.rs/">Library Genesis</a></li>
 <li><a href="https://www.slideshare.net/TobyLiu/newsfeed?redirect=1">SlideShare</a></li>
-<li><a href="https://books.google.com">google book</a></li>
+<li><a href="https://books.google.com">Google Books</a></li>
+</ul>
+<h3 id="_28">博物馆</h3>
+<p>这些站点提供博物馆信息和数字藏品。</p>
+<ul>
 <li><a href="https://www.npm.gov.tw/">台北故宫博物院</a></li>
 <li><a href="http://www.miho.or.jp/zh/">日本美秀博物馆</a></li>
-<li><a href="https://digicol.dpm.org.cn/">故宫博物院-数字文物馆</a></li>
+<li><a href="https://digicol.dpm.org.cn/">故宫博物院数字文物馆</a></li>
 </ul>
-<h1 id="tools">Tools</h1>
+</section>
+<section class="bookmark-card">
+<h2 id="microsoft">Microsoft</h2>
+<p>访问 Microsoft 文档、社区、订阅和学习资源。</p>
+<h3 id="_29">文档与社区</h3>
+<p>这些入口集中提供 Microsoft 技术资料和支持。</p>
 <ul>
-<li><a href="https://e.ggtimer.com/">E.gg Timer</a></li>
-<li><a href="https://www.timeanddate.com/worldclock/">The World Clock</a></li>
-<li><a href="https://www.slant.co/">What Are The Best ...</a></li>
-<li><a href="https://time.is/">Time.is</a></li>
-<li><a href="https://filehelper.weixin.qq.com/">微信文件传输</a></li>
-<li><a href="https://regex101.com/">regex tester and debugger</a></li>
-<li><a href="https://www.openstreetmap.org">OpenStreetMap</a></li>
-<li><a href="https://earth.google.com/web/">Google Earth 9 in Chrome</a></li>
-<li><a href="https://send.firefox.com/">一次性文件共享</a></li>
-<li><a href="https://slides.com/">slides ppt online</a></li>
-<li><a href="https://gotranscript.com/subtitle-converter">subtitle-converter 字幕转换</a></li>
-<li><a href="https://www.writage.com/#benefits">markdown-in-MS-word</a></li>
-<li><a href="https://www.jdoodle.com/">在线代码编辑器</a></li>
-<li><a href="https://crontab.guru/">cron schedule editor</a></li>
-<li><a href="https://www.random.org/passwords/?num=5&amp;len=8&amp;format=plain&amp;rnd=new/">random-password-生成随机密码</a></li>
-<li><a href="https://explainshell.com/">bash-shell-explain</a></li>
-<li><a href="https://www.csscompressor.com/">css-compress</a></li>
-<li><a href="https://cn.spritegen.website-performance.org/">css-sprites</a></li>
-<li><a href="https://validator.w3.org/">html-validate</a></li>
-<li><a href="https://www.w3schools.com/xml/xml_validator.asp">xml-validate</a></li>
-<li><a href="https://jsonlint.com/">json-validate</a></li>
-<li><a href="https://jsoneditoronline.org/">JSON Editor Online</a></li>
-<li><a href="https://www.json.org/">JSON</a></li>
-<li><a href="https://www.base64encode.org/">base64encode</a></li>
-<li><a href="https://www.epochconverter.com/">Unix Timestamp Conversion</a></li>
-<li><a href="https://regex101.com">regex debugger</a></li>
-<li><a href="https://pwgen.io/en/">online password generator</a></li>
-<li><a href="https://jwt.ms/">jwt token</a></li>
-<li><a href="https://httpbin.org/ip">httpbin ip</a></li>
-<li><a href="https://vim.rtorr.com/">vim cheetsheet</a></li>
-<li><a href="https://logomakerr.ai/make">logo maker</a></li>
-<li><a href="https://devdocs.io/">DevDocs</a></li>
-<li><a href="https://eloquentjavascript.net/">Eloquent JavaScript A Modern Introduction to Programming </a></li>
-<li><a href="https://developer.mozilla.org/">mozilla | MDN</a></li>
-<li><a href="https://developer.yahoo.com/">yahoo-ydn</a></li>
-<li><a href="https://jquery.com/">Jquery</a></li>
-<li><a href="https://jsbin.com">JS Bin</a></li>
-<li><a href="https://jsfiddle.net/">JSFiddle:code playground</a></li>
-<li><a href="https://www.jslint.com/">jslint-validate</a></li>
-<li><a href="https://www.w3school.com.cn/">w3school-china</a></li>
-<li><a href="https://fontawesome.com/icons">font awesome icons</a></li>
-<li><a href="https://color.adobe.com/zh/create/color-contrast-analyzer">color pick</a></li>
-<li><a href="https://www.w3schools.com/default.asp">w3school-english</a></li>
-<li><a href="https://webdevchecklist.com/aspnet">Web Developer Checklist</a></li>
-<li><a href="https://www.regexpal.com/">Regex Tester 正则测试工具</a></li>
-<li><a href="https://haveibeenpwned.com/">HaveIBeenPwned</a></li>
-<li><a href="https://www.exploit-db.com/google-hacking-database">Google Hacking Database</a></li>
-<li><a href="https://urlscan.io/">urlscan</a></li>
-<li><a href="https://www.cve.org/">cve.org</a></li>
-<li><a href="http://fanyi.youdao.com/">有道翻译</a></li>
-<li><a href="https://cn.bing.com/translator">Bing-Translator</a></li>
-<li><a href="https://www.zdic.net/">汉典</a></li>
-<li><a href="https://dict.cn/">海词词典</a></li>
-<li><a href="https://translate.google.cn">google-dict</a></li>
-<li><a href="https://www.speedtest.net/">网速测试</a></li>
-<li><a href="https://www.maxmind.com/en/home">查IP来源国家和经纬度</a></li>
-<li><a href="https://db-ip.com/">查IP</a></li>
-<li><a href="https://searchdns.netcraft.com/">根据域名查看子站点域名</a></li>
-<li><a href="https://www.whatismyip.com">获取当前本机IP地址</a></li>
-<li><a href="https://whatismybrowser.com">获取当前浏览器信息</a></li>
-<li><a href="https://ipaddressguide.com/cidr">cidr range check</a></li>
-<li><a href="https://ipduh.com/ip/cidr/">cidr validate</a></li>
-<li><a href="https://bgpview.io/">BGPView</a></li>
-<li><a href="https://analytics.google.com/analytics/web/">Google Analytics</a></li>
-<li><a href="https://liuning0820.disqus.com/admin/analytics/comments">Disqus Comments评论分析</a></li>
-</ul>
-<h1 id="microsoft">Microsoft 微软</h1>
-<ul>
-<li><a href="https://channel9.msdn.com/">channel-9-videos</a></li>
-<li><a href="https://docs.microsoft.com/zh-cn/">microsoft-doc-cn</a></li>
-<li><a href="https://docs.microsoft.com/en-us/">microsoft-doc</a></li>
-<li><a href="https://techcommunity.microsoft.com">microsoft-techcommunity</a></li>
-<li><a href="https://www.microsoft.com/net">microsoft-net</a></li>
-<li><a href="https://my.visualstudio.com/benefits">msdn-subscription</a></li>
-<li><a href="https://referencesource.microsoft.com/">DotNet Source Code</a></li>
+<li><a href="https://docs.microsoft.com/zh-cn/">Microsoft Learn 中文</a></li>
+<li><a href="https://docs.microsoft.com/en-us/">Microsoft Learn English</a></li>
+<li><a href="https://techcommunity.microsoft.com">Microsoft Tech Community</a></li>
+<li><a href="https://www.microsoft.com/net">.NET</a></li>
+<li><a href="https://my.visualstudio.com/benefits">Visual Studio 订阅权益</a></li>
+<li><a href="https://referencesource.microsoft.com/">.NET Reference Source</a></li>
 <li><a href="https://answers.microsoft.com/en-us/">Microsoft Answers</a></li>
 <li><a href="https://msdn.microsoft.com/zh-cn/magazine/ee310108.aspx">MSDN Magazine</a></li>
 <li><a href="https://msdn.microsoft.com/zh-cn/default.aspx">MSDN</a></li>
 <li><a href="https://partner.microsoft.com/en-us/Training">Microsoft Partner University</a></li>
+<li><a href="https://channel9.msdn.com/">Channel 9</a></li>
 </ul>
-<h2 id="_4">生活服务</h2>
+</section>
+<section class="bookmark-card">
+<h2 id="_30">生活与健康</h2>
+<p>访问购物、公共服务、交通和健身入口。</p>
+<h3 id="_31">健身</h3>
+<p>这个工具提供按身体部位划分的训练动作。</p>
 <ul>
-<li><a href="https://www.amazon.cn/">amazon亚马逊</a></li>
-<li><a href="https://www.jd.com/">jd京东</a></li>
+<li><a href="https://musclewiki.com/">MuscleWiki</a></li>
+</ul>
+<h3 id="_32">购物与出行</h3>
+<p>这些站点用于购物、铁路和停车服务。</p>
+<ul>
+<li><a href="https://www.amazon.cn/">Amazon 中国</a></li>
+<li><a href="https://www.jd.com/">京东</a></li>
 <li><a href="https://www.suning.com/">苏宁易购</a></li>
-<li><a href="https://www.21cnhr.gov.cn/">21世纪人才网首页-上海</a></li>
-<li><a href="https://www.spta.gov.cn/index.html">上海市职业能力考试院</a></li>
-<li><a href="https://www.shgjj.com/">上海住房公积金网</a></li>
-<li><a href="https://www.12333sh.gov.cn/">上海市人力资源社会保障网-12333</a></li>
-<li><a href="https://www.shjjw.gov.cn">上海市住房和城乡建设管理委员会</a></li>
-<li><a href="http://www.fangdi.com.cn/">网上房地产</a></li>
-<li><a href="http://www.962222.net">(上海市民信息服务网 - 社保卡-居住证查询)</a></li>
-<li><a href="http://www.shyb.gov.cn">(上海医保网)</a></li>
-<li><a href="http://sh.gsxt.gov.cn">(企业工商信用信息系统)</a></li>
-<li><a href="http://www.sptcc.com/">上海公共交通卡余额查询</a></li>
-<li><a href="https://gr.tax.sh.gov.cn/portals/web/login">(个税)</a></li>
-<li><a href="https://sh.189.cn/service/support/support_serve.jsp">上海电信网上营业厅</a></li>
-<li><a href="https://www.12306.cn/mormhweb/">铁路客户服务中心</a></li>
+<li><a href="https://www.12306.cn/mormhweb/">中国铁路 12306</a></li>
 <li><a href="http://www.122park.com/sh/">停车位查找</a></li>
-<li><a href="https://wenshu.court.gov.cn/">中国裁判文书网</a></li>
-<li><a href="https://hr.lgxc.gov.cn">临港新片区人才服务系统</a></li>
 </ul>
-<h2 id="_5">职场培训</h2>
+<h3 id="_33">上海公共服务</h3>
+<p>这些入口提供上海就业、住房、社保和城市服务。</p>
 <ul>
-<li><a href="https://www.edx.org/">edX-MOOC</a></li>
-<li><a href="https://www.coursera.org/">Coursera-MOOC</a></li>
-<li><a href="https://www.udacity.com/">udacity-MOOC</a></li>
+<li><a href="https://www.21cnhr.gov.cn/">上海公共招聘</a></li>
+<li><a href="https://www.spta.gov.cn/index.html">上海市职业能力考试院</a></li>
+<li><a href="https://www.shgjj.com/">上海住房公积金</a></li>
+<li><a href="https://www.12333sh.gov.cn/">上海人力资源和社会保障</a></li>
+<li><a href="https://www.shjjw.gov.cn">上海住房和城乡建设管理委员会</a></li>
+<li><a href="http://www.fangdi.com.cn/">网上房地产</a></li>
+<li><a href="http://www.962222.net">上海市民信息服务</a></li>
+<li><a href="http://www.shyb.gov.cn">上海医保</a></li>
+<li><a href="http://sh.gsxt.gov.cn">国家企业信用信息公示系统</a></li>
+<li><a href="http://www.sptcc.com/">上海公共交通卡</a></li>
+<li><a href="https://gr.tax.sh.gov.cn/portals/web/login">个人所得税</a></li>
+<li><a href="https://sh.189.cn/service/support/support_serve.jsp">上海电信网上营业厅</a></li>
+<li><a href="https://wenshu.court.gov.cn/">中国裁判文书网</a></li>
+<li><a href="https://hr.lgxc.gov.cn">临港新片区人才服务</a></li>
+</ul>
+</section>
+<section class="bookmark-card">
+<h2 id="_34">学习与职场</h2>
+<p>访问开放课程、编程教育和职业发展资源。</p>
+<h3 id="_35">在线课程</h3>
+<p>这些平台提供大学课程、技术培训和英语学习内容。</p>
+<ul>
+<li><a href="https://www.edx.org/">edX</a></li>
+<li><a href="https://www.coursera.org/">Coursera</a></li>
+<li><a href="https://www.udacity.com/">Udacity</a></li>
 <li><a href="https://www.khanacademy.org/">Khan Academy</a></li>
 <li><a href="https://www.icourses.cn/home/">中国大学公开课</a></li>
-<li><a href="https://www.chinesemooc.org">华文慕课-北大</a></li>
-<li><a href="http://ocw.aca.ntu.edu.tw/ntu-ocw">台大公开课</a></li>
-<li><a href="https://ocw.mit.edu">OCW-MIT</a></li>
-<li><a href="https://academy.microsoft.com">Microsoft Professional Program</a></li>
-<li><a href="https://app.pluralsight.com/library">pluralsight技术培训课程</a></li>
-<li><a href="https://fosdem.org/2017/">fosdem-free-event-for-dev</a></li>
-<li><a href="https://hp.openmentoring.com/om/">欢迎来到开放式辅导</a></li>
-<li><a href="https://edge.globalenglish.com/">learn-english</a></li>
-<li><a href="https://studio.code.org">小孩编程code.org</a></li>
-<li><a href="https://www.playcodemonkey.com">小孩编程code-monkey</a></li>
-<li><a href="https://coderdojo.com/">小孩编程coderdojo</a></li>
-<li><a href="https://www.zhubajie.com/">猪八戒 </a></li>
-<li><a href="https://shop.zhubajie.com/4841263/ability">能力评估_bywbj</a></li>
-<li><a href="https://www.monster.com/geo/siteselection/">International Jobs-Monster.com</a></li>
+<li><a href="https://www.chinesemooc.org">华文慕课</a></li>
+<li><a href="http://ocw.aca.ntu.edu.tw/ntu-ocw">台大开放式课程</a></li>
+<li><a href="https://ocw.mit.edu">MIT OpenCourseWare</a></li>
+<li><a href="https://academy.microsoft.com">Microsoft Academy</a></li>
+<li><a href="https://app.pluralsight.com/library">Pluralsight</a></li>
+<li><a href="https://fosdem.org/2017/">FOSDEM</a></li>
+<li><a href="https://hp.openmentoring.com/om/">开放式辅导</a></li>
+<li><a href="https://edge.globalenglish.com/">GlobalEnglish</a></li>
+</ul>
+<h3 id="_36">少儿编程</h3>
+<p>这些平台通过课程和社区帮助孩子学习编程。</p>
+<ul>
+<li><a href="https://studio.code.org">Code.org</a></li>
+<li><a href="https://www.playcodemonkey.com">CodeMonkey</a></li>
+<li><a href="https://coderdojo.com/">CoderDojo</a></li>
+</ul>
+<h3 id="_37">职业发展</h3>
+<p>这些入口提供自由职业、招聘和面试资源。</p>
+<ul>
+<li><a href="https://www.zhubajie.com/">猪八戒</a></li>
+<li><a href="https://shop.zhubajie.com/4841263/ability">能力评估</a></li>
+<li><a href="https://www.monster.com/geo/siteselection/">Monster Jobs</a></li>
 <li><a href="https://www.techinterviews.com/">Tech Interviews</a></li>
 <li><a href="https://www.jobbole.com/">伯乐在线</a></li>
 <li><a href="https://www.51job.com/">前程无忧</a></li>
-<li><a href="http://fanyi.youdao.com/">有道翻译</a></li>
-<li><a href="https://cn.bing.com/translator">Bing-Translator</a></li>
-<li><a href="https://www.zdic.net/">汉典</a></li>
-<li><a href="https://dict.cn/">海词词典</a></li>
-<li><a href="https://translate.google.cn">google-dict</a></li>
 </ul>
+</section>
+</div>
+
+</div>
+
 
 
 
@@ -692,7 +1748,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    2024-06-06
+    2026-10-03
   </span>
 
     
@@ -709,19 +1765,6 @@
 
 <!-- Inject Disqus into current page -->
 
-<!-- <script src="https://giscus.app/client.js" data-repo="liuning0820/public-doc-as-code" data-repo-id="MDEwOlJlcG9zaXRvcnkxOTk4MDA0Mjg="
-    data-category="General" data-category-id="DIC_kwDOC-i2bM4CXHIi" data-mapping="pathname" data-reactions-enabled="1"
-    data-emit-metadata="0" data-theme="light" data-lang="en" crossorigin="anonymous" async>
-    </script> -->
-
-
-<script src="https://giscus.app/client.js" data-repo="liuning0820/public-doc-as-code"
-    data-repo-id="MDEwOlJlcG9zaXRvcnkxOTk4MDA0Mjg=" data-category="Announcements"
-    data-category-id="DIC_kwDOC-i2bM4CXHIi" data-mapping="title" data-strict="0" data-reactions-enabled="1"
-    data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en"
-    crossorigin="anonymous" async>
-    </script>
-
                 
               </article>
             </div>
@@ -729,6 +1772,12 @@
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -739,7 +1788,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2020 - 2023 Toby Liu. All Rights Reserved.
+      Copyright &copy; 2020 - 2026 Toby Liu. All Rights Reserved.
     </div>
   
   
@@ -759,7 +1808,7 @@
     
     
     
-    <a href="http://www.linkedin.com/in/toby-liu-86750923/" target="_blank" rel="noopener" title="Linkin" class="md-social__link">
+    <a href="http://www.linkedin.com/in/toby-liu-86750923/" target="_blank" rel="noopener" title="LinkedIn" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/></svg>
     </a>
   
@@ -775,7 +1824,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.dd8806f2.min.js"></script>
