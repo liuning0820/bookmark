@@ -233,6 +233,22 @@ hide:
 
 <section class="bookmark-card" markdown>
 
+## AI
+
+访问常用的 AI 助手、开发工具和认知工具研究资料。
+
+### AI 工具与研究
+
+- [our papers – cognitive tools lab](https://cogtoolslab.github.io/papers.html)
+- [Google Gemini](https://gemini.google.com/app)
+- [Grok](https://grok.com/?q=&reasoningMode=none&voice=false)
+- [Home | Kiro Web](https://app.kiro.dev/home)
+- [Quick - Home](https://quick.aws.com/sn/account/043000359968/start/home)
+
+</section>
+
+<section class="bookmark-card" markdown>
+
 ## 网络与安全
 
 查询网络信息，并访问常用的安全检查资源。
