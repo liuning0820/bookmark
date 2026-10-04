@@ -332,5 +332,8 @@ ASALocalRun/
 
 site/*
 
+# Python virtual environment
+.venv/
+
 .jenkins*
 .qodo
